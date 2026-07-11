@@ -578,15 +578,26 @@
 
         /* Responsive Breakpoints */
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; text-align: center; }
+            .nav-container { flex-direction: column; gap: 15px; text-align: center; width: 100%; }
             .left-header-block { flex-direction: column; gap: 10px; }
             .comm-details { border-left: none; padding-left: 0; }
-            nav ul { margin-top: 10px; }
+            
+            /* Stack the horizontal menu items vertically so they don't leak past screen boundaries */
+            nav ul { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 12px; 
+                margin-top: 10px; 
+            }
+            nav ul li { 
+                margin-left: 0 !important; /* Strips the wide left spacing rule */
+            }
+            
             .hero { padding: 260px 20px 80px 20px; }
             .hero h1 { font-size: 1.8rem; }
             .main-section { padding: 60px 20px; }
         }
-    </style>
+		</style>
 </head>
 <body>
 
