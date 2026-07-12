@@ -4,7 +4,7 @@ Welcome to the official digital repository for **Acorda Law**, a specialized sol
 
 ## 🌐 Live Website
 View the fully responsive website here:
-👉 **https://acordalawoffice.github.io/law/**
+👉 **https://acordalawoffice.github.io/law.github.io/**
 
 ---
 
