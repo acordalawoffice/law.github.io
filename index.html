@@ -26,18 +26,19 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Georgia', 'Times New Roman', serif; 
         }
 
         html {
             scroll-behavior: smooth;
         }
 
-        body {
-            color: var(--text-dark);
-            line-height: 1.6;
-            background-color: var(--bg-light);
-        }
+	body {
+    	font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	}
+	h1, h2, h3, .text-serif {
+    	font-family: 'Cormorant Garamond', 'Georgia', serif;
+	}
+        
 
         /* ===================================================
             DYNAMIC HEADER & NAVIGATION STYLES
@@ -83,8 +84,46 @@
         }
 
         /* ===================================================
-            THE LOGO VECTOR EMBED (STATIC CSS)
+            THE REFINED PREMIUM GOLD-TRIMMED LOGO FRAME
            =================================================== */
+        
+        /* 1. THE GOLD OUTER FRAME (Acts as the premium edge trim) */
+        .gold-outer-frame {
+            padding: 2px; /* This exact padding defines the visual thickness of your gold edge trim */
+            background: linear-gradient(135deg, 
+                #bf953f 0%, 
+                #fcf6ba 25%, 
+                #b38728 50%, 
+                #fbf5b7 75%, 
+                #aa771c 100%
+            ); /* Premium Multi-Tone Metallic Gold Gradient */
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            transition: box-shadow 0.4s ease;
+        }
+
+        /* 2. THE EMBEDDED INNER BOX (Houses the logo, blocking out the middle) */
+        .logo-inner-box {
+            background-color: #111e2b; /* Solid Dark Navy background fill to maximize contrast */
+            padding: 8px 16px;
+            border-radius: 2px; /* Slightly tighter rounding to follow the outer frame */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.4s ease;
+        }
+
+        /* Adaptation changes for scrolled-white status */
+        header.scrolled-white .logo-inner-box {
+            background-color: #ffffff; /* Inner backing seamlessly converts to clean white */
+        }
+        
+        header.scrolled-white .gold-outer-frame {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 3. CORE LOGO GRAPHICS AND TYPOGRAPHY */
         .linear-horizon-logo {
             display: inline-flex;
             flex-direction: column;
@@ -96,7 +135,7 @@
             display: flex;
             align-items: flex-end; 
             gap: 4px;              
-            margin-bottom: 3px;
+            margin-bottom: 4px;
         }
 
         .bar {
@@ -105,7 +144,7 @@
             transition: background-color 0.4s ease;
         }
 
-        /* Initial transparent state (White bars) */
+        /* Logo Graphic Components */
         .bar-left { height: 20px; background-color: #FFFFFF; }
         .bar-middle { height: 28px; background-color: var(--secondary-color); }
         .bar-right { height: 15px; background-color: #FFFFFF; }
@@ -127,10 +166,10 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.6rem; 
             font-weight: 600;
-            color: #FFFFFF; /* White on transparent hero overlay */
+            color: #FFFFFF; 
             letter-spacing: 0.5px;
-            text-shadow: none !important; /* Strips shadows */
-            transition: color 0.4s ease; /* Smooth transformation transition */
+            text-shadow: none !important; 
+            transition: color 0.4s ease; 
         }
 
         .brand-text .text-sans {
@@ -142,7 +181,7 @@
             text-shadow: none !important;
         }
 
-        /* TRANSITION LOGO MUTATIONS BASED ON HEADER STATE */
+        /* SCROLL TRANSITION ADAPTATIONS FOR INTERNAL LOGO TEXT */
         header.scrolled-white .bar-left, 
         header.scrolled-white .bar-right {
             background-color: var(--primary-color) !important;
@@ -192,7 +231,7 @@
             text-decoration: none;
             margin-top: 2px;
             text-shadow: none !important;
-            transition: color 0.4s ease; /* Smooth transformation transition */
+            transition: color 0.4s ease; 
         }
 
         header.scrolled-white .comm-details a {
@@ -217,7 +256,7 @@
             font-size: 0.9rem;
             font-weight: 600;
             text-shadow: none !important;
-            transition: color 0.4s ease; /* Smooth transformation transition */
+            transition: color 0.4s ease; 
         }
 
         header.scrolled-white nav ul li a {
@@ -254,7 +293,7 @@
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: #cbd5e0;
             margin-bottom: 35px;
             max-width: 750px;
@@ -295,7 +334,6 @@
             padding: 90px 20px;
             max-width: 1100px;
             margin: 0 auto;
-            /* FIX: Leaves a 100px buffer zone so the sticky menu banner never cuts off titles */
             scroll-margin-top: 100px; 
         }
 
@@ -304,7 +342,6 @@
             margin-bottom: 50px;
         }
 
-        /* FIX: Uniform H2 declaration forces all section headers to use identical typography sizing */
         .section-header h2 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.5rem !important; 
@@ -355,15 +392,17 @@
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 1px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .profile-text p {
             margin-bottom: 15px;
             color: #4a5568;
-            font-size: 1.05rem;
-            text-align: justify;
-        }
+            font-size: 1.10rem;
+ 	    text-align: justify;
+	    font-family: 'Georgia', serif; /* Elegant reading serif for body copy */
+            line-height: 1.5;
+       }
 
         /* Practice Focus Cards Grid */
         .cards-grid {
@@ -454,214 +493,80 @@
             color: var(--secondary-color);
         }
 
-        /* Contact Details & Box Form Layout */
+/* Contact Section Details */
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
         }
 
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .contact-info h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        .contact-detail-block {
-            margin-bottom: 20px;
-        }
-
-        .contact-detail-block h4 {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: var(--secondary-color);
-            margin-bottom: 4px;
-        }
-
-        .contact-detail-block p, .contact-detail-block a {
-            font-size: 1.05rem;
-            color: var(--text-dark);
-            text-decoration: none;
-        }
-
-        .contact-detail-block a:hover {
-            color: var(--secondary-color);
-        }
-
-        .contact-form-box {
+        .contact-info-card {
             background-color: var(--bg-white);
-            border: 1px solid var(--border-color);
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group label {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 600;
-            display: block;
-            margin-bottom: 6px;
-            color: var(--primary-color);
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px 14px;
+            border-radius: 6px;
             border: 1px solid var(--border-color);
-            border-radius: 4px;
-            font-size: 0.95rem;
-            color: var(--text-dark);
-            background-color: #ffffff;
         }
 
-        .form-group input:focus, .form-group textarea:focus {
-            outline: none;
-            border-color: var(--secondary-color);
-        }
-
-        .btn-submit {
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            font-family: 'Arial', sans-serif;
-            font-size: 0.85rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-        }
-
-        .btn-submit:hover {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-        }
-
-        /* Footer Layout */
+        /* Footer Basic Design */
         footer {
             background-color: var(--primary-color);
-            color: #a0aec0;
+            color: var(--text-light);
             padding: 40px 20px;
             text-align: center;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             border-top: 3px solid var(--secondary-color);
         }
-
-        footer p {
-            margin-bottom: 10px;
-        }
-
-        footer .footer-brand {
-            font-family: 'Cormorant Garamond', serif;
-            color: var(--text-light);
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        /* Responsive Breakpoints */
-        @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; text-align: center; width: 100%; }
-            .left-header-block { flex-direction: column; gap: 10px; }
-            .comm-details { border-left: none; padding-left: 0; }
-            
-            /* Stack the horizontal menu items vertically so they don't leak past screen boundaries */
-            nav ul { 
-                flex-direction: column; 
-                align-items: center; 
-                gap: 12px; 
-                margin-top: 10px; 
-            }
-            nav ul li { 
-                margin-left: 0 !important; /* Strips the wide left spacing rule */
-            }
-            
-            .hero { padding: 260px 20px 80px 20px; }
-            .hero h1 { font-size: 1.8rem; }
-            .main-section { padding: 60px 20px; }
-        }
-		</style>
+    </style>
 </head>
 <body>
 
-    <!-- DYNAMIC HEADER LAYER -->
-    <header id="dynamicHeader">
+    <!-- Header and Navigation Layout -->
+    <header id="mainHeader">
         <div class="nav-container">
-            
-            <!-- LEFT SIDE: Pure Code Static Logo & Communications Unit -->
             <div class="left-header-block">
-                
-                <!-- EMBEDDED LOGO MARK -->
-                <div class="linear-horizon-logo">
-                    <div class="logo-mark">
-                        <div class="bar bar-left"></div>
-                        <div class="bar bar-middle"></div>
-                        <div class="bar bar-right"></div>
-                    </div>
-                    <div class="logo-anchor"></div>
-                    <div class="brand-text">
-                        <span class="text-serif">Acorda</span><span class="text-sans">Law</span>
+                <!-- Premium Gold-Trimmed Logo Frame -->
+                <div class="gold-outer-frame">
+                    <div class="logo-inner-box">
+                        <div class="linear-horizon-logo">
+                            <div class="logo-mark">
+                                <div class="bar bar-left"></div>
+                                <div class="bar bar-middle"></div>
+                                <div class="bar bar-right"></div>
+                            </div>
+                            <div class="logo-anchor"></div>
+                            <div class="brand-text">
+                                <span class="text-serif">Acorda</span>
+                                <span class="text-sans">LAW</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- High-Contrast Communications Link -->
+                <!-- Communication Bar Info -->
                 <div class="comm-details">
-                    <span>Urgent Advisory / Consultations:</span>
+                    <span>🗓️ 📞</span>
                     <a href="tel:+639277989147">+63 927 798 9147</a>
                 </div>
             </div>
-                
-            <!-- RIGHT SIDE: Dynamic Navigation Links -->
+
             <nav>
                 <ul>
-                    <li><a href="#about">Lawyer's Profile</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Counsel Profile</a></li>
                     <li><a href="#practice">Practice Focus</a></li>
                     <li><a href="#insights">Legal Insights Hub</a></li>
-                    <li><a href="#contact">Contact &amp; Consultations</a></li>
+                    <li><a href="#contact">Contact & Consultations</a></li>
                 </ul>
             </nav>
-                
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="heroSection" class="hero">
-        <div class="hero-content">
-            <h1>Workplace Governance & Policy Design • Regulatory Advisory & Operational Compliance • Complex Labor Dispute & Employment Litigation</h1>
-            <p>Providing comprehensive legal advisory services dedicated to designing compliant workplace policies, managing structured corporate adjustments, and resolving labor disputes within the regulatory framework of Philippine labor standards.</p>
+    <!-- Rest of Document Content Sections (Hero, Profile, Cards, Insights, Contact) go here... -->
 
-            <div class="btn-action-container">
-                <a href="mailto:rpacorda.law@gmail.com?subject=Inquiry:%20Legal%20Consultation%20Request" class="btn-action">
-                    Request a Legal Consultation
-                </a>
-            </div>
-        </div>
-    </section>
-
-<!-- FIXED JAVASCRIPT: Changes background immediately upon scrolling past 50px -->
+    <!-- REQUIRED JAVASCRIPT FOR SCROLL INTERACTION -->
     <script>
         window.addEventListener('scroll', function() {
-            const header = document.getElementById('dynamicHeader');
-            if (!header) return;
-
-            // Flips instantly to white background once user scrolls down 50 pixels
+            const header = document.getElementById('mainHeader');
             if (window.scrollY > 50) {
                 header.classList.add('scrolled-white');
             } else {
@@ -669,18 +574,42 @@
             }
         });
     </script>
-
 </body>
 </html>
- 
 
+
+    <!-- Institutional Hero Banner -->
+        <section id="home" class="hero">
+	<div class="hero-content">
+            <h1>Upholding Legal Integrity • Ensuring Labor Compliance • Advancing Workplace Equity</h1>
+            <p>Providing strategic legal counsel, rigorous risk mitigation, and comprehensive advocacy for all stakeholders across the complex landscape of Philippine Labor Law.</p>
+            <div class="btn-action-container">
+                <a href="#contact" class="btn-action">Schedule an Executive Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Interactive Navigation Engine -->
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('mainHeader');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled-white');
+            } else {
+                header.classList.remove('scrolled-white');
+            }
+        });
+    </script>
+</body>
+</html>
 
     <!-- ===================================================
-        SECTION 1: LAWYER'S PROFILE
+        SECTION 1: COUNSEL PROFILE
        =================================================== -->
     <section id="about" class="main-section">
         <div class="section-header">
-            <h2>Lawyer's Profile</h2>
+            <h2>Counsel Profile</h2>
         </div>
         <div class="profile-container">
             <div class="profile-grid">
@@ -697,7 +626,7 @@
 </p>
 
 <p>
-    Atty. Acorda's practice includes litigation before the National Labor Relations Commission (NLRC), where he represents clients through administrative investigations, Single Entry Approach (SEnA) mediation, and formal arbitration tracks. He also handles regulatory and compliance matters before the Department of Labor and Employment (DOLE) and the Department of Migrant Workers (DMW), including the Philippine Overseas Employment Administration (POEA) and the Overseas Workers Welfare Administration (OWWA), for both local and international employment concerns.
+    Atty. Acorda's practice includes litigation before the National Labor Relations Commission (NLRC), where he represents clients through the Single Entry Approach (SEnA conciliation-mediation) and formal arbitration tracks. He also handles regulatory and compliance matters before the Department of Labor and Employment (DOLE) and the Department of Migrant Workers (DMW), including the Philippine Overseas Employment Administration (POEA) and the Overseas Workers Welfare Administration (OWWA), for both local and international employment concerns.
 </p>
                 </div>
             </div>
@@ -829,9 +758,10 @@
         </p>
     </div>
 
-    <!-- Article 1: The Two Notice Rule -->
-    <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Navigating Due Process: The Two-Notice Rule in Philippine Labor Law</h3>
+   <!-- Article 1: The Two Notice Rule -->
+<div style="width: 100%; margin-bottom: 35px;">
+    <article style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Navigating Due Process: The Two-Notice Rule in Philippine Labor Law</h3>
         <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published by Office of Atty. Rodel P. Acorda • Legal Educational Article</div>
         
         <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -865,10 +795,12 @@
             </p>
         </div>
     </article>
+</div>
 
-    <!-- Article 2: Constructive Dismissal -->
-    <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Understanding "Constructive Dismissal": When Resignation Counts as Termination</h3>
+<!-- Article 2: Constructive Dismissal -->
+<div style="width: 100%; margin-bottom: 35px;">
+    <article style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Understanding "Constructive Dismissal": When Resignation Counts as Termination</h3>
         <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published by Office of Atty. Rodel P. Acorda • Legal Educational Article</div>
         
         <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -896,10 +828,12 @@
             </p>
         </div>
     </article>
+</div>
 
-    <!-- Article 3: Probationary Employment -->
-    <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">The 180-Day Trap: Managing Probationary Employment Without Automatic Regularization</h3>
+<!-- Article 3: Probationary Employment -->
+<div style="width: 100%; margin-bottom: 35px;">
+    <article style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">The 180-Day Trap: Managing Probationary Employment Without Automatic Regularization</h3>
         <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: HR Compliance</div>
 
         <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -911,7 +845,7 @@
             <ul style="padding-left: 24px; margin-bottom: 20px;">
                 <li style="margin-bottom: 8px;"><strong>Communicate Standards on Day One:</strong> To successfully terminate an unsatisfactory probationary employee, you must prove that the precise performance standards were made known to them <em>at the time of engagement</em>.</li>
                 <li style="margin-bottom: 8px;"><strong>The Extension Myth:</strong> You cannot casually extend a probationary period past 6 months unless there is a formal, written agreement voluntarily signed by both parties, strictly tied to an ongoing training program.</li>
-                <li style="margin-bottom: 8px;"><strong>Periodic Evaluation:</strong> Conduct a formal monthly performance review to ensure you have written tracking data before the final decision is implemented.</li>
+                <li style="margin-bottom: 8px;"><strong>Mid-Term Evaluation:</strong> Conduct a formal performance review at Month 3 and Month 5 to ensure you have written tracking data before the final decision is implemented.</li>
             </ul>
 
             <blockquote style="margin: 25px 0; padding: 15px 20px; background: #fdfaf2; border-left: 4px solid #D4AF37; font-style: italic; color: #444;">
@@ -925,10 +859,12 @@
             </p>
         </div>
     </article>
+</div>
 
-    <!-- Article 4: AWOL vs Abandonment -->
-    <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">AWOL is Not Abandonment: The Legal Steps to Terminate an Absent Employee</h3>
+<!-- Article 4: AWOL vs Abandonment -->
+<div style="width: 100%; margin-bottom: 35px;">
+    <article style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">AWOL is Not Abandonment: The Legal Steps to Terminate an Absent Employee</h3>
         <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Dispute Avoidance</div>
 
         <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -955,10 +891,12 @@
             </p>
         </div>
     </article>
+</div>
 
-    <!-- Article 5: 13th-Month Pay -->
-    <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">13th-Month Pay: What Counts and What Doesn't in Your Year-End Computations</h3>
+<!-- Article 5: 13th-Month Pay -->
+<div style="width: 100%; margin-bottom: 20px;">
+    <article style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">13th-Month Pay: What Counts and What Doesn't in Your Year-End Computations</h3>
         <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Labor Standards</div>
 
         <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -991,11 +929,11 @@
             </p>
         </div>
     </article>
-</section>
+</div>
 
 <!-- Start of Article 6: Safe Spaces Act -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Republic Act 11313: Mandatory Corporate Duties Under the Safe Spaces Act</h3>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Republic Act 11313: Mandatory Corporate Duties Under the Safe Spaces Act</h3>
     <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Corporate Compliance</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -1025,7 +963,7 @@
 
 <!-- Start of Article 7: Voluntary Resignation Protocols -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">The Statutory Framework of Voluntary Resignation: Managing Clean Exits</h3>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">The Statutory Framework of Voluntary Resignation: Managing Clean Exits</h3>
     <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: HR Operations</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -1067,7 +1005,7 @@
 
 <!-- Start of Article 8: Serious Misconduct -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Just Causes for Termination: The Strict Doctrine of Serious Misconduct</h3>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Just Causes for Termination: The Strict Doctrine of Serious Misconduct</h3>
     <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Disciplinary Prerogatives</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -1099,8 +1037,8 @@
 
 <!-- Start of Article 9: Willful Disobedience -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Just Causes for Termination: Insubordination and Willful Disobedience</h3>
-    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Corporate Governance</div>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Just Causes for Termination: Insubordination and Willful Disobedience</h3>
+    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Disciplinary Prerogatives</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
         <p style="margin-bottom: 15px;">
@@ -1131,8 +1069,8 @@
 
 <!-- Start of Article 10: Gross and Habitual Neglect -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Just Causes for Termination: Gross and Habitual Neglect of Duties</h3>
-    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Labor Standards</div>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Just Causes for Termination: Gross and Habitual Neglect of Duties</h3>
+    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Disciplinary Prerogatives</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
         <p style="margin-bottom: 15px;">
@@ -1164,8 +1102,8 @@
 
 <!-- Start of Article 11: Fraud and Willful Breach of Trust -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Just Causes for Termination: Fraud and the Loss of Trust and Confidence</h3>
-    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Risk Management</div>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Just Causes for Termination: Fraud and the Loss of Trust and Confidence</h3>
+    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Disciplinary Prerogatives</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
         <p style="margin-bottom: 15px;">
@@ -1197,7 +1135,7 @@
 <!-- Start of Article 12: Illegal Dismissal Overseas -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
     <span style="color: #D4AF37; font-weight: bold; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Land-Based OFW Law</span>
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">Can an OFW Sue for Illegal Dismissal If the Termination Happened Abroad?</h3>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">Can an OFW Sue for Illegal Dismissal If the Termination Happened Abroad?</h3>
     <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Overseas Employment</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -1228,8 +1166,8 @@
 <!-- Start of Article 13: Placement Fees & Illegal Exactions -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
     <span style="color: #D4AF37; font-weight: bold; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Regulatory Compliance</span>
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">Excessive Placement Fees: Compliance Thresholds and Legal Remedies</h3>
-    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Migrant Regulations</div>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">Excessive Placement Fees: Compliance Thresholds and Legal Remedies</h3>
+    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Recruitment Regulations</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
         <p style="margin-bottom: 15px;">
@@ -1257,8 +1195,8 @@
 <!-- Start of Article 14: Joint and Solidary Liability -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
     <span style="color: #D4AF37; font-weight: bold; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Agency Risk Management</span>
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">Understanding Joint and Solidary Liability Under Section 10 of R.A. 8042</h3>
-    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Agency Compliance</div>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">Understanding Joint and Solidary Liability Under Section 10 of R.A. 8042</h3>
+    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Legislation Compliance</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
         <p style="margin-bottom: 15px;">
@@ -1288,7 +1226,7 @@
 <!-- Start of Article 15: Maritime Disability Timelines -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
     <span style="color: #D4AF37; font-weight: bold; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Maritime / Seafarer Law</span>
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">The 120-Day vs. 240-Day Rule in Seafarer Permanent Disability Benefits</h3>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">The 120-Day vs. 240-Day Rule in Seafarer Permanent Disability Benefits</h3>
     <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Maritime Labor</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
@@ -1317,8 +1255,8 @@
 <!-- Start of Article 16: Medical Repatriation & The 3-Day Rule -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
     <span style="color: #D4AF37; font-weight: bold; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Maritime Claims Defence</span>
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">Medical Repatriation: Work-Relation and the Critical 3-Day Mandatory Rule</h3>
-    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Litigation Defence</div>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">Medical Repatriation: Work-Relation and the Critical 3-Day Mandatory Rule</h3>
+    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Maritime Labor</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
         <p style="margin-bottom: 15px;">
@@ -1345,9 +1283,9 @@
 
 <!-- Start of Article 17: Magna Carta of Filipino Seafarers -->
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-    <span style="color: #D4AF37; font-weight: bold; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Jurisprudence Updates</span>
-    <h3 style="font-size: 1.4rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">The Magna Carta of Filipino Seafarers: Shifting Paradigms in Maritime Labor Execution</h3>
-    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: New Legislation</div>
+    <span style="color: #D4AF37; font-weight: bold; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Law Updates</span>
+    <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 5px; margin-bottom: 10px;">The Magna Carta of Filipino Seafarers: Shifting Paradigms in Maritime Labor Execution</h3>
+    <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Seafarer Legislation</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
         <p style="margin-bottom: 15px;">
@@ -1372,37 +1310,36 @@
 </article>
 <!-- End of Article 17 -->
 
-
 <!-- START OF ARTICLE 18: REMEDIES FOR ILLEGAL DISMISSAL -->
-<div class="article-box" id="article-18" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; max-width: 1000px; margin-left: auto; margin-right: auto; box-sizing: border-box;">
-    <h3>The Twin Remedies of Illegal Dismissal: Reinstatement and Backwages</h3>
-    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px;">Published: July 2026 | Category: Remedial Labor Law</div>
+<div class="article-box" id="article-18" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">
+    <h3 style="font-size: 2.0rem; margin-top: 0; line-height: 1.3;">The Twin Remedies of Illegal Dismissal: Reinstatement and Backwages</h3>
+    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">Published: July 2026 | Category: Labor Law</div>
 
-    <p style="text-align: justify; line-height: 1.6;">
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 18px;">
         Under Article 294 of the Labor Code, an employee who is unjustly dismissed from work is entitled to what jurisprudence calls the <strong>"twin remedies"</strong> of illegal dismissal: <strong>reinstatement</strong> to their former position without loss of seniority rights, and <strong>full backwages</strong> inclusive of allowances and other benefits, computed from the time compensation was withheld up to the time of actual reinstatement. 
     </p>
-    <p style="text-align: justify; line-height: 1.6;">
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 22px;">
         These two remedies are distinct and separate. Reinstatement aims to restore the employee to their <em>status quo ante</em> (prior state), while backwages serve as a form of restorative compensation for income lost due to the employer's illegal act. 
     </p>
 
-    <h4>When is Separation Pay Applied as an Alternative?</h4>
-    <p style="text-align: justify; line-height: 1.6;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">When is Separation Pay Applied as an Alternative?</h4>
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 14px;">
         While reinstatement is the general rule, the Supreme Court recognizes that it is not always feasible. When reinstatement is no longer possible or practical, the alternative remedy of <strong>Separation Pay in lieu of reinstatement</strong> is awarded, alongside full backwages. This occurs under the following definitive legal grounds:
     </p>
-    <ul style="padding-left: 20px; margin-bottom: 20px; color: #333; text-align: justify; line-height: 1.6;">
-        <li style="margin-bottom: 8px;"><strong>The Doctrine of Strained Relations:</strong> When the litigation has generated such deep antagonism, severe animosity, or mutual distrust between the employer and employee that working together again would disrupt corporate harmony. This is highly applicable to managerial, confidential, or close-contact personnel.</li>
-        <li style="margin-bottom: 8px;"><strong>Infeasibility:</strong> When the employee's former position has been abolished due to legitimate corporate restructuring, redundancy, or closure, and there is no substantially equivalent position available.</li>
-        <li style="margin-bottom: 8px;"><strong>Physical Incapacity:</strong> When the employee has developed medical conditions during the pendency of the case that prevent them from safely returning to their assignment.</li>
+    <ul style="padding-left: 20px; margin-bottom: 22px; color: #333; text-align: justify; line-height: 1.65;">
+        <li style="margin-bottom: 10px;"><strong>The Doctrine of Strained Relations:</strong> When the litigation has generated such deep antagonism, severe animosity, or mutual distrust between the employer and employee that working together again would disrupt corporate harmony. This is highly applicable to managerial, confidential, or close-contact personnel.</li>
+        <li style="margin-bottom: 10px;"><strong>Infeasibility:</strong> When the employee's former position has been abolished due to legitimate corporate restructuring, redundancy, or closure, and there is no substantially equivalent position available.</li>
+        <li style="margin-bottom: 10px;"><strong>Physical Incapacity:</strong> When the employee has developed medical conditions during the pendency of the case that prevent them from safely returning to their assignment.</li>
     </ul>
 
-    <h4>The Computation Standard</h4>
-    <p style="text-align: justify; line-height: 1.6;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">The Computation Standard</h4>
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 18px;">
         When separation pay is granted as an alternative remedy, it is computed at <strong>one (1) month salary for every year of service</strong>, a fraction of at least six (6) months being considered as one whole year. The salary baseline includes the basic pay and regular cash allowances. Crucially, the period for computing separation pay runs from the first day of employment up to the <strong>finality of the judicial decision</strong>, not just the date of illegal dismissal.
     </p>
 
     <!-- INLINE ARTICLE MICRO-DISCLAIMER -->
     <div style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
-        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.4; margin: 0; text-align: justify;">
+        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.5; margin: 0; text-align: justify;">
             *Disclaimer: Case outcomes depend heavily on specific timelines and evidentiary facts. This general analysis is not formal legal advice. Read our full firm caveat at the top of this hub or consult an attorney.*
         </p>
     </div>
@@ -1410,62 +1347,62 @@
 <!-- END OF ARTICLE 18 -->
 
 <!-- START OF ARTICLE 19: AUTHORIZED CAUSES -->
-<div class="article-box" id="article-19" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; max-width: 1000px; margin-left: auto; margin-right: auto; box-sizing: border-box;">
-    <h3>Corporate Prerogative vs. Security of Tenure: The Authorized Causes of Termination</h3>
-    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px;">Published: July 2026 | Category: Corporate Restructuring</div>
+<div class="article-box" id="article-19" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">
+    <h3 style="font-size: 2.0rem; margin-top: 0; line-height: 1.3;">Corporate Prerogative vs. Security of Tenure: The Authorized Causes of Termination</h3>
+    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">Published: July 2026 | Category: Corporate Restructuring</div>
 
-    <p style="text-align: justify; line-height: 1.6;">
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 22px;">
         Unlike "Just Causes" which turn on an employee's misconduct, <strong>Authorized Causes</strong> under Articles 298 and 299 of the Labor Code represent legitimate business or health grounds that permit an enterprise to terminate an employment contract without fault on the part of the worker. Because this encroaches directly upon the worker's security of tenure, the courts demand strict compliance with statutory and financial requirements.
     </p>
 
-    <h4>The Statutory Requirements for Business Grounds</h4>
-    <div style="overflow-x: auto; margin-bottom: 20px;">
-        <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; min-width: 500px; line-height: 1.5;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">The Statutory Requirements for Business Grounds</h4>
+    <div style="overflow-x: auto; margin-bottom: 22px;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; min-width: 500px; line-height: 1.6;">
             <thead>
                 <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0;">
-                    <th style="padding: 12px 10px; text-align: left; font-weight: bold;">Authorized Cause</th>
-                    <th style="padding: 12px 10px; text-align: left; font-weight: bold;">Legal Standard / Criteria</th>
-                    <th style="padding: 12px 10px; text-align: left; font-weight: bold;">Mandatory Separation Pay</th>
+                    <th style="padding: 12px 10px; text-align: left; font-weight: bold; line-height: 1.3;">Authorized Cause</th>
+                    <th style="padding: 12px 10px; text-align: left; font-weight: bold; line-height: 1.3;">Legal Standard / Criteria</th>
+                    <th style="padding: 12px 10px; text-align: left; font-weight: bold; line-height: 1.3;">Mandatory Separation Pay</th>
                 </tr>
             </thead>
             <tbody>
                 <tr style="border-bottom: 1px solid #edf2f7;">
-                    <td style="padding: 12px 10px; font-weight: bold; vertical-align: top;">Automation / Installation of Labor-Saving Devices</td>
-                    <td style="padding: 12px 10px; text-align: justify; vertical-align: top;">Introduction of machinery or advanced software that renders human labor redundant. Must be done in good faith.</td>
-                    <td style="padding: 12px 10px; vertical-align: top;"><strong>1 month pay</strong> OR 1 month per year of service (whichever is higher).</td>
+                    <td style="padding: 14px 10px; font-weight: bold; vertical-align: top; line-height: 1.5;">Automation / Installation of Labor-Saving Devices</td>
+                    <td style="padding: 14px 10px; text-align: justify; vertical-align: top; line-height: 1.6;">Introduction of machinery or advanced software that renders human labor redundant. Must be done in good faith.</td>
+                    <td style="padding: 14px 10px; vertical-align: top; line-height: 1.5;"><strong>1 month pay</strong> OR 1 month per year of service (whichever is higher).</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #edf2f7;">
-                    <td style="padding: 12px 10px; font-weight: bold; vertical-align: top;">Redundancy</td>
-                    <td style="padding: 12px 10px; text-align: justify; vertical-align: top;">The position is superfluous or excess. Requires objective selection criteria (e.g., efficiency ratings, seniority) to prove good faith.</td>
-                    <td style="padding: 12px 10px; vertical-align: top;"><strong>1 month pay</strong> OR 1 month per year of service (whichever is higher).</td>
+                    <td style="padding: 14px 10px; font-weight: bold; vertical-align: top; line-height: 1.5;">Redundancy</td>
+                    <td style="padding: 14px 10px; text-align: justify; vertical-align: top; line-height: 1.6;">The position is superfluous or excess. Requires objective selection criteria (e.g., efficiency ratings, seniority) to prove good faith.</td>
+                    <td style="padding: 14px 10px; vertical-align: top; line-height: 1.5;"><strong>1 month pay</strong> OR 1 month per year of service (whichever is higher).</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #edf2f7;">
-                    <td style="padding: 12px 10px; font-weight: bold; vertical-align: top;">Retrenchment</td>
-                    <td style="padding: 12px 10px; text-align: justify; vertical-align: top;">Executed to prevent serious, substantial, and reasonably imminent business losses. Losses must be proven via audited financial statements.</td>
-                    <td style="padding: 12px 10px; vertical-align: top;"><strong>0.5 month pay</strong> per year of service OR 1 month pay (whichever is higher).</td>
+                    <td style="padding: 14px 10px; font-weight: bold; vertical-align: top; line-height: 1.5;">Retrenchment</td>
+                    <td style="padding: 14px 10px; text-align: justify; vertical-align: top; line-height: 1.6;">Executed to prevent serious, substantial, and reasonably imminent business losses. Losses must be proven via audited financial statements.</td>
+                    <td style="padding: 14px 10px; vertical-align: top; line-height: 1.5;"><strong>0.5 month pay</strong> per year of service OR 1 month pay (whichever is higher).</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #edf2f7;">
-                    <td style="padding: 12px 10px; font-weight: bold; vertical-align: top;">Closure of Establishment</td>
-                    <td style="padding: 12px 10px; text-align: justify; vertical-align: top;">Complete cessation of business operations. If due to severe financial reversals, no separation pay is legally required. If voluntary/profitable, separation pay applies.</td>
-                    <td style="padding: 12px 10px; vertical-align: top;"><strong>0.5 month pay</strong> per year of service (if not due to severe losses).</td>
+                    <td style="padding: 14px 10px; font-weight: bold; vertical-align: top; line-height: 1.5;">Closure of Establishment</td>
+                    <td style="padding: 14px 10px; text-align: justify; vertical-align: top; line-height: 1.6;">Complete cessation of business operations. If due to severe financial reversals, no separation pay is legally required. If voluntary/profitable, separation pay applies.</td>
+                    <td style="padding: 14px 10px; vertical-align: top; line-height: 1.5;"><strong>0.5 month pay</strong> per year of service (if not due to severe losses).</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h4>Article 299: Disease as an Authorized Cause</h4>
-    <p style="text-align: justify; line-height: 1.6;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">Article 299: Disease as an Authorized Cause</h4>
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 22px;">
         An employer may terminate an employee who has been diagnosed with a disease if their continued employment is prohibited by law or is <strong>prejudicial to their health or the health of their co-workers</strong>. This ground requires a strict statutory condition: a <strong>competent public health authority</strong> must issue a formal medical certificate certifying that the disease is of such a nature or at such a stage that it cannot be cured within a period of six (6) months even with proper medical treatment. Separation pay is mandatory at 0.5 month salary per year of service.
     </p>
 
-    <h4>The Two Mandatory Notice Obligations</h4>
-    <p style="text-align: justify; line-height: 1.6;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">The Two Mandatory Notice Obligations</h4>
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 18px;">
         To legally implement any authorized cause, the employer must serve <strong>written notices at least thirty (30) calendar days prior</strong> to the intended date of termination to two distinct entities: (1) The affected employee, and (2) The Department of Labor and Employment (DOLE) Establishment Report system. Failure to serve either notice exposes the company to severe nominal damages, even if the business ground is perfectly valid.
     </p>
 
     <!-- INLINE ARTICLE MICRO-DISCLAIMER -->
     <div style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
-        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.4; margin: 0; text-align: justify;">
+        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.5; margin: 0; text-align: justify;">
             *Disclaimer: Case outcomes depend heavily on specific timelines and evidentiary facts. This general analysis is not formal legal advice. Read our full firm caveat at the top of this hub or consult an attorney.*
         </p>
     </div>
@@ -1473,44 +1410,44 @@
 <!-- END OF ARTICLE 19 -->
 
 <!-- START OF ARTICLE 20: RETIREMENT PAY -->
-<div class="article-box" id="article-20" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; max-width: 1000px; margin-left: auto; margin-right: auto; box-sizing: border-box;">
-    <h3>Demystifying Statutory Retirement Pay for Daily and Monthly Paid Employees</h3>
-    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px;">Published: July 2026 | Category: Labor Standards</div>
+<div class="article-box" id="article-20" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">
+    <h3 style="font-size: 2.0rem; margin-top: 0; line-height: 1.3;">Demystifying Statutory Retirement Pay for Daily and Monthly Paid Employees</h3>
+    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">Published: July 2026 | Category: Labor Standards</div>
 
-    <p style="text-align: justify; line-height: 1.6;">
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 22px;">
         Article 302 of the Labor Code ensures that employees who devote years of service to an enterprise are protected during their golden years. In the absence of a retirement plan or Collective Bargaining Agreement (CBA) in the workplace, an employee is entitled to statutory retirement pay upon reaching the age of <strong>sixty (60) years (optional retirement)</strong> or <strong>sixty-five (65) years (compulsory retirement)</strong>, provided they have rendered at least <strong>five (5) years of continuous service</strong> to the enterprise.
     </p>
 
-    <h4>The Legal Definition of a "Half-Month" Salary</h4>
-    <p style="text-align: justify; line-height: 1.6;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">The Legal Definition of a "Half-Month" Salary</h4>
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 14px;">
         The statutory retirement pay formula dictates that a retiring employee must receive a minimum of <strong>one-half (1/2) month salary for every year of service</strong>, where a fraction of at least six (6) months is treated as a full year. However, the Supreme Court has clarified that a statutory "half-month salary" actually consists of <strong>22.5 days</strong> of pay because it must mathematically include the following components:
     </p>
-    <div style="background: #f8fafc; padding: 15px; border-radius: 4px; font-size: 0.95rem; color: #1e293b; margin: 15px 0; border: 1px dashed #cbd5e1; font-weight: 600; text-align: center;">
+    <div style="background: #f8fafc; padding: 15px; border-radius: 4px; font-size: 0.95rem; color: #1e293b; margin: 18px 0; border: 1px dashed #cbd5e1; font-weight: 600; text-align: center; line-height: 1.6;">
         Statutory Half-Month Package = 15 Days (Basic Salary) + 5 Days (Service Incentive Leave) + 2.5 Days (1/12 of 13th-Month Pay)
     </div>
 
-    <h4>Computation Methodologies</h4>
-    <p style="text-align: justify; line-height: 1.6;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">Computation Methodologies</h4>
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 14px;">
         The mathematical calculation varies based on how the employee's pay structure is set up:
     </p>
-    <ol style="padding-left: 20px; margin-bottom: 20px; color: #333; text-align: justify; line-height: 1.7;">
-        <li style="margin-bottom: 12px;">
+    <ol style="padding-left: 20px; margin-bottom: 22px; color: #333; text-align: justify; line-height: 1.75;">
+        <li style="margin-bottom: 14px;">
             <strong>For Daily-Paid Employees:</strong> Multiply the worker's latest Daily Minimum Wage (DWR) by 22.5 days, then multiply that product by their total years of service.
-            <br><span style="font-family: monospace; font-size: 0.95rem; color: #b45309; background-color: #fffbeb; padding: 2px 6px; border-radius: 3px; display: inline-block; margin-top: 4px;">Formula: Retirement Pay = (Latest DWR × 22.5) × Total Years of Service</span>
+            <br><span style="font-family: monospace; font-size: 0.95rem; color: #b45309; background-color: #fffbeb; padding: 4px 8px; border-radius: 3px; display: inline-block; margin-top: 6px; line-height: 1.4;">Formula: Retirement Pay = (Latest DWR × 22.5) × Total Years of Service</span>
         </li>
-        <li style="margin-bottom: 12px;">
+        <li style="margin-bottom: 14px;">
             <strong>For Monthly-Paid Employees:</strong> First, derive the equivalent daily rate by taking the Monthly Basic Salary, multiplying it by 12, and dividing it by the total applicable working days in a year (e.g., 313 days or 365 days depending on the category). Once the daily rate is established, apply the 22.5-day baseline multiplier.
-            <br><span style="font-family: monospace; font-size: 0.95rem; color: #b45309; background-color: #fffbeb; padding: 2px 6px; border-radius: 3px; display: inline-block; margin-top: 4px;">Formula: Retirement Pay = (Derived Daily Rate × 22.5) × Total Years of Service</span>
+            <br><span style="font-family: monospace; font-size: 0.95rem; color: #b45309; background-color: #fffbeb; padding: 4px 8px; border-radius: 3px; display: inline-block; margin-top: 6px; line-height: 1.4;">Formula: Retirement Pay = (Derived Daily Rate × 22.5) × Total Years of Service</span>
         </li>
     </ol>
 
-    <blockquote style="margin: 20px 0; padding: 15px 20px; background: #fdfaf2; border-left: 4px solid #D4AF37; color: #444; text-align: justify; line-height: 1.6;">
+    <blockquote style="margin: 20px 0; padding: 15px 20px; background: #fdfaf2; border-left: 4px solid #D4AF37; color: #444; text-align: justify; line-height: 1.75;">
         <strong>The Retail Exclusion:</strong> Retail, service, and agricultural establishments regularly employing <strong>fewer than ten (10) workers</strong> are explicitly exempted from the mandatory coverage of the Retirement Pay Law.
     </blockquote>
 
     <!-- INLINE ARTICLE MICRO-DISCLAIMER -->
     <div style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
-        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.4; margin: 0; text-align: justify;">
+        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.5; margin: 0; text-align: justify;">
             *Disclaimer: Case outcomes depend heavily on specific timelines and evidentiary facts. This general analysis is not formal legal advice. Read our full firm caveat at the top of this hub or consult an attorney.*
         </p>
     </div>
@@ -1518,34 +1455,34 @@
 <!-- END OF ARTICLE 20 -->
 
 <!-- START OF ARTICLE 21: LABOR STANDARDS & FIELD PERSONNEL -->
-<div class="article-box" id="article-21" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; max-width: 1000px; margin-left: auto; margin-right: auto; box-sizing: border-box;">
-    <h3>Holiday Pay, SIL, and Night Differential: Core Benefits and the "Field Personnel" Test</h3>
-    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px;">Published: July 2026 | Category: Labor Standards</div>
+<div class="article-box" id="article-21" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">
+    <h3 style="font-size: 2.0rem; margin-top: 0; line-height: 1.3;">Holiday Pay, SIL, and Night Differential: Core Benefits and the "Field Personnel" Test</h3>
+    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">Published: July 2026 | Category: Labor Standards</div>
 
-    <p style="text-align: justify; line-height: 1.6;">
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 14px;">
         Book III of the Labor Code establishes basic safety-net premiums designed to protect employee welfare. Understanding who qualifies for these individual benefits is essential for payroll compliance:
     </p>
-    <ul style="padding-left: 20px; margin-bottom: 20px; color: #333; text-align: justify; line-height: 1.6;">
-        <li style="margin-bottom: 10px;"><strong>Holiday Pay (Article 94):</strong> Entitles every rank-and-file worker to 100% of their regular daily wage on regular holidays even if they do not report for work, or 200% if they are required to work. Excludes retail/service enterprises employing fewer than 10 workers.</li>
-        <li style="margin-bottom: 10px;"><strong>Service Incentive Leave (SIL) (Article 95):</strong> Mandates five (5) days of paid leave annually for any employee who has rendered at least one year of service. Unused SIL must be converted to cash at the end of the year. Excludes businesses with fewer than 10 employees.</li>
-        <li style="margin-bottom: 10px;"><strong>Night Shift Differential (Article 86):</strong> An additional premium of <strong>not less than ten percent (10%)</strong> of the employee's regular wage for every hour worked between <strong>10:00 PM and 6:00 AM</strong>.</li>
+    <ul style="padding-left: 20px; margin-bottom: 22px; color: #333; text-align: justify; line-height: 1.65;">
+        <li style="margin-bottom: 12px;"><strong>Holiday Pay (Article 94):</strong> Entitles every rank-and-file worker to 100% of their regular daily wage on regular holidays even if they do not report for work, or 200% if they are required to work. Excludes retail/service enterprises employing fewer than 10 workers.</li>
+        <li style="margin-bottom: 12px;"><strong>Service Incentive Leave (SIL) (Article 95):</strong> Mandates five (5) days of paid leave annually for any employee who has rendered at least one year of service. Unused SIL must be converted to cash at the end of the year. Excludes businesses with fewer than 10 employees.</li>
+        <li style="margin-bottom: 12px;"><strong>Night Shift Differential (Article 86):</strong> An additional premium of <strong>not less than ten percent (10%)</strong> of the employee's regular wage for every hour worked between <strong>10:00 PM and 6:00 AM</strong>.</li>
     </ul>
 
-    <h4>The Crucial Legal Element of "Field Personnel"</h4>
-    <p style="text-align: justify; line-height: 1.6;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">The Crucial Legal Element of "Field Personnel"</h4>
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 18px;">
         Under the Labor Code, <strong>Field Personnel are completely excluded from entitlement to Holiday Pay, SIL, and Night Shift Differential.</strong> However, simply labeling an employee a "field representative," "salesman," or "collector" does not automatically excuse the employer from paying these premiums. The law applies a strict, literal test based on operational control.
     </p>
-    <p style="text-align: justify; line-height: 1.6;">
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 22px;">
         To qualify as genuine field personnel, the employee must perform their duties away from the principal place of business or branch office, <strong>AND their actual working hours cannot be determined with reasonable certainty by management</strong>.
     </p>
 
-    <blockquote style="margin: 20px 0; padding: 15px 20px; background: #f8fafc; border-left: 4px solid #3182ce; color: #2d3748; text-align: justify; line-height: 1.6;">
+    <blockquote style="margin: 20px 0; padding: 15px 20px; background: #f8fafc; border-left: 4px solid #3182ce; color: #2d3748; text-align: justify; line-height: 1.75;">
         <strong>The Modern Technology Exception:</strong> If an employee works outside the office but is required to log their location in real-time via mobile GPS apps, submit hourly digital logs, report via teleconferencing, or follow strict, rigid route delivery timelines, their hours <em>can</em> be determined with certainty. The Supreme Court dictates that such workers are <strong>not</strong> field personnel, and they remain fully entitled to Holiday Pay, SIL, and Night Shift Differential.
     </blockquote>
 
     <!-- INLINE ARTICLE MICRO-DISCLAIMER -->
     <div style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
-        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.4; margin: 0; text-align: justify;">
+        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.5; margin: 0; text-align: justify;">
             *Disclaimer: Case outcomes depend heavily on specific timelines and evidentiary facts. This general analysis is not formal legal advice. Read our full firm caveat at the top of this hub or consult an attorney.*
         </p>
     </div>
@@ -1553,34 +1490,34 @@
 <!-- END OF ARTICLE 21 -->
 
 <!-- START OF ARTICLE 22: PROJECT EMPLOYEES -->
-<div class="article-box" id="article-22" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; max-width: 1000px; margin-left: auto; margin-right: auto; box-sizing: border-box;">
-    <h3>Project Employment: Statutory Controls and the Danger of Automatic Regularization</h3>
-    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px;">Published: July 2026 | Category: Employment Status</div>
+<div class="article-box" id="article-22" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">
+    <h3 style="font-size: 2.0rem; margin-top: 0; line-height: 1.3;">Project Employment: Statutory Controls and the Danger of Automatic Regularization</h3>
+    <div class="article-meta" style="color: #718096; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">Published: July 2026 | Category: Employment Status</div>
 
-    <p style="text-align: justify; line-height: 1.6;">
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 22px;">
         Article 295 of the Labor Code allows for <strong>Project Employment</strong> as an explicit statutory exception to regular employment. A project employee is defined as a worker whose employment has been fixed for a specific project or undertaking, the completion or termination of which has been <strong>determined at the time of the engagement</strong>. This is highly relevant in construction, filmmaking, and specialized software development.
     </p>
 
-    <h4>The Strict Prerequisites to Prove Valid Project Status</h4>
-    <p style="text-align: justify; line-height: 1.6;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">The Strict Prerequisites to Prove Valid Project Status</h4>
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 14px;">
         To defend against claims of illegal dismissal and automatic regular employment status, the employer bears the burden of proving two concurrent operational facts:
     </p>
-    <ol style="padding-left: 20px; margin-bottom: 20px; color: #333; text-align: justify; line-height: 1.6;">
-        <li style="margin-bottom: 10px;">The project, scope, and specific timeline must be explicitly detailed in a written <strong>Project Employment Contract</strong> signed by the employee <em>at the very start</em> of the engagement.</li>
-        <li style="margin-bottom: 10px;">The employer must submit a formal <strong>Establishment Report of Project Termination</strong> to the nearest DOLE provincial office within fifteen (15) days of the completion of each project. Failure to file this report is treated by the NLRC as clear evidence that the worker is a regular employee, not a project hand.</li>
+    <ol style="padding-left: 20px; margin-bottom: 22px; color: #333; text-align: justify; line-height: 1.65;">
+        <li style="margin-bottom: 12px;">The project, scope, and specific timeline must be explicitly detailed in a written <strong>Project Employment Contract</strong> signed by the employee <em>at the very start</em> of the engagement.</li>
+        <li style="margin-bottom: 12px;">The employer must submit a formal <strong>Establishment Report of Project Termination</strong> to the nearest DOLE provincial office within fifteen (15) days of the completion of each project. Failure to file this report is treated by the NLRC as clear evidence that the worker is a regular employee, not a project hand.</li>
     </ol>
 
-    <h4>The Effect of Continuous Rehiring and Length of Service</h4>
-    <p style="text-align: justify; line-height: 1.6;">
+    <h4 style="font-size: 1.3rem; line-height: 1.3; margin-top: 25px; margin-bottom: 12px;">The Effect of Continuous Rehiring and Length of Service</h4>
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 18px;">
         While the Supreme Court recognizes that project employees can be rehired for new, separate projects, <strong>repeated and continuous rehiring over a prolonged duration</strong> can transform a project worker into a regular employee by operation of law. 
     </p>
-    <p style="text-align: justify; line-height: 1.6;">
+    <p style="text-align: justify; line-height: 1.75; margin-bottom: 18px;">
         This occurs when the tasks performed by the project employee are <strong>vital, necessary, and indispensable</strong> to the usual business or trade of the employer. If a worker continuously jumps from project to project for years doing the exact same core work without actual gaps in employment, the law strips away the "project" label to prevent the abuse of fixed-term contracts. They achieve regular status, meaning they can no longer be separated without a valid Just or Authorized cause and full due process.
     </p>
 
     <!-- INLINE ARTICLE MICRO-DISCLAIMER -->
     <div style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
-        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.4; margin: 0; text-align: justify;">
+        <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.5; margin: 0; text-align: justify;">
             *Disclaimer: Case outcomes depend heavily on specific timelines and evidentiary facts. This general analysis is not formal legal advice. Read our full firm caveat at the top of this hub or consult an attorney.*
         </p>
     </div>
