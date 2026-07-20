@@ -2,8 +2,10 @@ const mainHeader = document.getElementById('mainHeader');
 const navToggle = document.getElementById('navToggle');
 const navBackdrop = document.getElementById('navBackdrop');
 const mainNav = document.getElementById('mainNav');
+const hasHero = document.querySelector('.hero');
 
 window.addEventListener('scroll', function () {
+    if (!hasHero) return; // no dark hero on this page — header stays solid always
     if (window.scrollY > 20) {
         mainHeader.classList.add('scrolled-white');
     } else {
