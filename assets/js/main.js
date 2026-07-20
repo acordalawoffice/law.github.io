@@ -4,14 +4,17 @@ const navBackdrop = document.getElementById('navBackdrop');
 const mainNav = document.getElementById('mainNav');
 const hasHero = document.querySelector('.hero');
 
-window.addEventListener('scroll', function () {
+function updateHeaderState() {
     if (!hasHero) return; // no dark hero on this page — header stays solid always
     if (window.scrollY > 20) {
         mainHeader.classList.add('scrolled-white');
     } else {
         mainHeader.classList.remove('scrolled-white');
     }
-});
+}
+
+window.addEventListener('scroll', updateHeaderState);
+updateHeaderState(); // check immediately too, in case the page loaded already scrolled (e.g. a #practice or #contact link)
 
 function closeMobileNav() {
     mainHeader.classList.remove('nav-open');
