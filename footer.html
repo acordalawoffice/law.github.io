@@ -1,0 +1,48 @@
+    <!-- Header and Navigation Layout -->
+    <header id="mainHeader">
+        <div class="nav-container">
+            <div class="left-header-block">
+                <!-- Premium Gold-Trimmed Logo Frame -->
+                <div class="gold-outer-frame">
+                    <div class="logo-inner-box">
+                        <div class="linear-horizon-logo">
+                            <div class="logo-mark">
+                                <div class="bar bar-left"></div>
+                                <div class="bar bar-middle"></div>
+                                <div class="bar bar-right"></div>
+                            </div>
+                            <div class="logo-anchor"></div>
+                            <div class="brand-text">
+                                <span class="text-serif">Acorda</span>
+                                <span class="text-sans">LAW</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Communication Bar Info -->
+                <div class="comm-details">
+                    <span>🗓️ 📞</span>
+                    <a href="tel:+639277989147">+63 927 798 9147</a>
+                </div>
+            </div>
+
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}#home">Home</a></li>
+                    <li><a href="{{ '/' | relative_url }}#about">Counsel Profile</a></li>
+                    <li><a href="{{ '/' | relative_url }}#practice">Practice Focus</a></li>
+                    <li><a href="{{ '/insights/' | relative_url }}">Legal Insights Hub</a></li>
+                    <li><a href="{{ '/' | relative_url }}#contact">Contact & Consultations</a></li>
+                </ul>
+            </nav>
+
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+                <span class="bar-icon"></span>
+                <span class="bar-icon"></span>
+                <span class="bar-icon"></span>
+            </button>
+
+            <div class="nav-backdrop" id="navBackdrop"></div>
+        </div>
+    </header>

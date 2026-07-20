@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description }}{% endif %}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+
+    <!-- Open Graph / Facebook preview tags -->
+    <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ page.image | default: site.default_image | absolute_url }}">
+
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <!-- Load elite typography directly from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+
+{% include header.html %}
+
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+{{ content }}
+
+{% include footer.html %}
+
+</body>
+</html>

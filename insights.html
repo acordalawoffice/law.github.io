@@ -1,0 +1,30 @@
+---
+layout: default
+title: Legal Insights Hub
+description: Educational articles on Philippine labor, maritime, and migrant worker law by Atty. Rodel P. Acorda.
+permalink: /insights/
+---
+<section id="insights" class="main-section" style="max-width: 1000px; margin: 0 auto; padding: 20px 0;">
+    <div class="section-header" style="margin-bottom: 30px;">
+        <h2 style="font-size: 2rem; color: var(--primary-color, #1a202c); margin: 0;">Legal Insights Hub</h2>
+    </div>
+
+    <!-- GLOBAL LEGAL INSIGHTS HUB DISCLAIMER -->
+    <div style="background-color: #f7fafc; border: 1px solid var(--border-color, #e2e8f0); border-left: 4px solid var(--primary-color, #2b6cb0); padding: 20px; margin-bottom: 40px; border-radius: 4px;">
+        <p style="font-size: 0.95rem; line-height: 1.6; color: #4a5568; text-align: justify; margin: 0;">
+            <strong>Legal Disclaimer &amp; Caveat:</strong> The articles, analysis, and opinions expressed within the Legal Insights Hub are provided solely for general informational and educational purposes. Given the highly technical and fact-specific nature of Philippine labor, maritime, and migrant worker laws, these materials are <strong>not universally applicable to all cases</strong> and do not constitute formal legal advice. Accessing or reading this content does not establish an attorney-client relationship. Readers are strongly advised to consult a qualified legal professional to evaluate the unique facts of their specific situation before taking any administrative or legal action.
+        </p>
+    </div>
+
+    <!-- Article Card List: automatically shows every file in _posts, newest first -->
+    <div class="insights-wrapper">
+        {% for post in site.posts %}
+        <div class="insight-item">
+            {% if post.category %}<span class="insight-tag">{{ post.category }}</span>{% endif %}
+            <h3><a href="{{ post.url | relative_url }}" style="color: inherit; text-decoration: none;">{{ post.title }}</a></h3>
+            <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 32 }}</p>
+            <a class="insight-link" href="{{ post.url | relative_url }}">Read Full Article &rarr;</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
