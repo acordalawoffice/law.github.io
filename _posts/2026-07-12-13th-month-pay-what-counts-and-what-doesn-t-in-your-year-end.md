@@ -3,6 +3,7 @@ title: "13th-Month Pay: What Counts and What Doesn't in Your Year-End Computatio
 date: 2026-07-12 10:28:34 +0800
 category: "Labor Standards"
 description: "Presidential Decree No. 851 mandates that all rank-and-file employees who have worked for at least one (1) month within a calendar year are entitled to 13th-month pay. This must be paid on..."
+markdown: false
 ---
 
 <div id="article-5" class="article-box" style="width: 100%; margin-bottom: 20px;">

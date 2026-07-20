@@ -3,6 +3,7 @@ title: "Republic Act 11313: Mandatory Corporate Duties Under the Safe Spaces Act
 date: 2026-07-12 11:05:42 +0800
 category: "Corporate Compliance"
 description: "The Safe Spaces Act (Bawal Bastos Law) significantly expands employer liabilities regarding gender-based sexual harassment within physical work sites, online communication channels, and off-site corporate events."
+markdown: false
 ---
 
 <article class="article-box" id="article-6" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

@@ -3,6 +3,7 @@ title: "Just Causes for Termination: Insubordination and Willful Disobedience"
 date: 2026-07-12 12:57:08 +0800
 category: "Disciplinary Prerogatives"
 description: "An enterprise cannot function efficiently if employees are permitted to openly disregard operational directives. Consequently, Article 297 (a) recognizes Willful Disobedience or insubordination as a valid ground to sever the employment bond."
+markdown: false
 ---
 
 <article class="article-box" id="article-9" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

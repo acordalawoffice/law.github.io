@@ -3,6 +3,7 @@ title: "The Magna Carta of Filipino Seafarers: Shifting Paradigms in Maritime La
 date: 2026-07-12 17:54:17 +0800
 category: "Law Updates"
 description: "The enactment of Republic Act No. 12021, otherwise known as the Magna Carta of Filipino Seafarers, marks one of the most significant legislative structural shifts in Philippine maritime law in decades. Aimed..."
+markdown: false
 ---
 
 <article class="article-box" id="article-17" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

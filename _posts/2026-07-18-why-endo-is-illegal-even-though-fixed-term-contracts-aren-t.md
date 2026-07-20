@@ -2,6 +2,7 @@
 title: "Why 'endo' is illegal, even though fixed-term contracts aren't"
 date: 2026-07-18 21:00:00 +0800
 description: "Contractualization under Philippine labor law — the line between legitimate fixed-term work and unlawful '5-5-5' hiring, and what it means for workers and employers"
+markdown: false
 ---
 
 <article class="legal-article" id="article-26-endo-contractualization">

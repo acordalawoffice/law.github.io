@@ -2,6 +2,7 @@
 title: "Can your employer stop you from working for a competitor?"
 date: 2026-07-18 12:20:00 +0800
 description: "Non-compete agreements under Philippine law — what makes them valid, what makes them void, and what both employers and employees should know"
+markdown: false
 ---
 
 <article class="legal-article" id="article-24-non-compete">

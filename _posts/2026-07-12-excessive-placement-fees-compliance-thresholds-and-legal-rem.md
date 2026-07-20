@@ -3,6 +3,7 @@ title: "Excessive Placement Fees: Compliance Thresholds and Legal Remedies"
 date: 2026-07-12 15:25:42 +0800
 category: "Regulatory Compliance"
 description: "The collection of placement fees remains one of the most heavily regulated aspects of overseas recruitment in the Philippines. Under the Department of Migrant Workers (DMW) rules, a legally operating recruitment agency..."
+markdown: false
 ---
 
 <article class="article-box" id="article-13" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

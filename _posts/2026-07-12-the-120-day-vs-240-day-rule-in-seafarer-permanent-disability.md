@@ -3,6 +3,7 @@ title: "The 120-Day vs. 240-Day Rule in Seafarer Permanent Disability Benefits"
 date: 2026-07-12 16:40:00 +0800
 category: "Maritime / Seafarer Law"
 description: "Among the various maritime labor disputes handled by Labor Arbiters, claims for permanent total disability benefits are arguably the most technically complex. At the heart of these disputes is a specific, strict..."
+markdown: false
 ---
 
 <article class="article-box" id="article-15" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

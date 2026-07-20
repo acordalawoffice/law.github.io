@@ -2,6 +2,7 @@
 title: "Understanding 'Constructive Dismissal': When Resignation Counts as Termination"
 date: 2026-07-12 08:37:08 +0800
 description: "Under Philippine labor law, security of tenure protects workers from arbitrary termination. While an outright dismissal by an employer is easy to identify, the law also recognizes a more subtle form of..."
+markdown: false
 ---
 
 <div id="article-2" class="article-box" style="width: 100%; margin-bottom: 35px;">

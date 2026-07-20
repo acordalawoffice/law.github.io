@@ -2,6 +2,7 @@
 title: "A job offer you sign is a job you already have"
 date: 2026-07-18 08:00:00 +0800
 description: "What the Aragones v. Alltech ruling means for Filipino workers and employers — G.R. No. 251736, decided April 2, 2025, Supreme Court of the Philippines"
+markdown: false
 ---
 
 <article class="legal-article" id="article-23-signed-offer-ruling">

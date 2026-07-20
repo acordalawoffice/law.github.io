@@ -3,6 +3,7 @@ title: "Just Causes for Termination: The Strict Doctrine of Serious Misconduct"
 date: 2026-07-12 12:20:00 +0800
 category: "Disciplinary Prerogatives"
 description: "Under Article 297 (a) of the Labor Code, an employer may validly dismiss an employee for Serious Misconduct. Misconduct is defined as improper or wrong conduct; it is a transgression of some..."
+markdown: false
 ---
 
 <article class="article-box" id="article-8" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

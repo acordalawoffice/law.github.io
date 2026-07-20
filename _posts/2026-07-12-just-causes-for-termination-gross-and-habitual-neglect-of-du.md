@@ -3,6 +3,7 @@ title: "Just Causes for Termination: Gross and Habitual Neglect of Duties"
 date: 2026-07-12 13:34:17 +0800
 category: "Disciplinary Prerogatives"
 description: "Under Article 297 (b) of the Labor Code, an employee can be lawfully dismissed if they are guilty of Gross and Habitual Neglect of their assigned corporate duties. This ground addresses persistent..."
+markdown: false
 ---
 
 <article class="article-box" id="article-10" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

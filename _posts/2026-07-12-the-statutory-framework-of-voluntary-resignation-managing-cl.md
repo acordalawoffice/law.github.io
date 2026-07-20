@@ -3,6 +3,7 @@ title: "The Statutory Framework of Voluntary Resignation: Managing Clean Exits"
 date: 2026-07-12 11:42:51 +0800
 category: "HR Operations"
 description: "Voluntary resignation is an exercise of an employee's prerogative to sever the employment relationship. While the law guarantees this right, Article 300 [285] of the Labor Code imposes a mandatory operational safeguard..."
+markdown: false
 ---
 
 <article class="article-box" id="article-7" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

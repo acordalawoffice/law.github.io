@@ -3,6 +3,7 @@ title: "Can an OFW Sue for Illegal Dismissal If the Termination Happened Abroad?
 date: 2026-07-12 14:48:34 +0800
 category: "Land-Based OFW Law"
 description: "A common misconception among land-based Overseas Filipino Workers (OFWs) is that because their employment contracts are performed overseas, they are entirely subject to the laws of the host country when disputes arise...."
+markdown: false
 ---
 
 <article class="article-box" id="article-12" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

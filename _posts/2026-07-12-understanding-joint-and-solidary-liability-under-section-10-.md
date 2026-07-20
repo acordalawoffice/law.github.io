@@ -3,6 +3,7 @@ title: "Understanding Joint and Solidary Liability Under Section 10 of R.A. 8042
 date: 2026-07-12 16:02:51 +0800
 category: "Agency Risk Management"
 description: "The cornerstone of Philippine migrant worker legislation is the principle of Joint and Solidary Liability. Codified under Section 10 of the Migrant Workers and Overseas Filipinos Act, this doctrine states that the..."
+markdown: false
 ---
 
 <article class="article-box" id="article-14" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

@@ -3,6 +3,7 @@ title: "Just Causes for Termination: Fraud and the Loss of Trust and Confidence"
 date: 2026-07-12 14:11:25 +0800
 category: "Disciplinary Prerogatives"
 description: "Article 297 (c) governs acts of Fraud or Willful Breach of Trust. This is one of the most widely cited grounds for dismissal in corporate environments, but it is also one of..."
+markdown: false
 ---
 
 <article class="article-box" id="article-11" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

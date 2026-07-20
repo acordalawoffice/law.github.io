@@ -2,6 +2,7 @@
 title: "Is that NDA you signed actually enforceable?"
 date: 2026-07-18 16:40:00 +0800
 description: "Non-disclosure agreements under Philippine law — what makes them hold up, what makes them collapse, and what both employers and employees should know"
+markdown: false
 ---
 
 <article class="legal-article" id="article-25-nda-enforceability">

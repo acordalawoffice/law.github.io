@@ -3,6 +3,7 @@ title: "Medical Repatriation: Work-Relation and the Critical 3-Day Mandatory Rul
 date: 2026-07-12 17:17:08 +0800
 category: "Maritime Claims Defence"
 description: "To successfully claim disability benefits or medical compensation under the POEA-SEC, a seafarer must establish two fundamental elements: the illness or injury must be work-related, and the condition must have manifested during..."
+markdown: false
 ---
 
 <article class="article-box" id="article-16" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">

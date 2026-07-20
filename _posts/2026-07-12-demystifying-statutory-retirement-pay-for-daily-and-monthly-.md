@@ -3,6 +3,7 @@ title: "Demystifying Statutory Retirement Pay for Daily and Monthly Paid Employe
 date: 2026-07-12 19:45:42 +0800
 category: "Labor Standards"
 description: "Article 302 of the Labor Code ensures that employees who devote years of service to an enterprise are protected during their golden years. In the absence of a retirement plan or Collective..."
+markdown: false
 ---
 
 <div class="article-box" id="article-20" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">

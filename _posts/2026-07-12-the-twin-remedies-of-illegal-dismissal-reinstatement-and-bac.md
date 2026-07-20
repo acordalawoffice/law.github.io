@@ -3,6 +3,7 @@ title: "The Twin Remedies of Illegal Dismissal: Reinstatement and Backwages"
 date: 2026-07-12 18:31:25 +0800
 category: "Labor Law"
 description: "Under Article 294 of the Labor Code, an employee who is unjustly dismissed from work is entitled to what jurisprudence calls the 'twin remedies' of illegal dismissal: reinstatement to their former position..."
+markdown: false
 ---
 
 <div class="article-box" id="article-18" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">

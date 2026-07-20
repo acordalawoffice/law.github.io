@@ -3,6 +3,7 @@ title: "Corporate Prerogative vs. Security of Tenure: The Authorized Causes of T
 date: 2026-07-12 19:08:34 +0800
 category: "Corporate Restructuring"
 description: "Unlike 'Just Causes' which turn on an employee's misconduct, Authorized Causes under Articles 298 and 299 of the Labor Code represent legitimate business or health grounds that permit an enterprise to terminate..."
+markdown: false
 ---
 
 <div class="article-box" id="article-19" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">

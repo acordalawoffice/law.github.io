@@ -3,6 +3,7 @@ title: "Holiday Pay, SIL, and Night Differential: Core Benefits and the 'Field P
 date: 2026-07-12 20:22:51 +0800
 category: "Labor Standards"
 description: "Book III of the Labor Code establishes basic safety-net premiums designed to protect employee welfare. Understanding who qualifies for these individual benefits is essential for payroll compliance:"
+markdown: false
 ---
 
 <div class="article-box" id="article-21" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">

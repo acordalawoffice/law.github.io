@@ -3,6 +3,7 @@ title: "AWOL is Not Abandonment: The Legal Steps to Terminate an Absent Employee
 date: 2026-07-12 09:51:25 +0800
 category: "Dispute Avoidance"
 description: "Many business owners assume that if an employee goes 'Absent Without Leave' (AWOL) for a week, they have resigned. This is a dangerous legal misconception. AWOL is merely a disciplinary infraction; Job..."
+markdown: false
 ---
 
 <div id="article-4" class="article-box" style="width: 100%; margin-bottom: 35px;">

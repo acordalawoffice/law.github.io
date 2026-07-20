@@ -3,6 +3,7 @@ title: "Project Employment: Statutory Controls and the Danger of Automatic Regul
 date: 2026-07-12 21:00:00 +0800
 category: "Employment Status"
 description: "Article 295 of the Labor Code allows for Project Employment as an explicit statutory exception to regular employment. A project employee is defined as a worker whose employment has been fixed for..."
+markdown: false
 ---
 
 <div class="article-box" id="article-22" style="background-color: #ffffff; padding: 25px 30px; margin-bottom: 30px; border: 1px solid var(--border-color); border-radius: 4px; width: 100%; box-sizing: border-box;">

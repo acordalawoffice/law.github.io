@@ -2,6 +2,7 @@
 title: "Navigating Due Process: The Two-Notice Rule in Philippine Labor Law"
 date: 2026-07-12 08:00:00 +0800
 description: "In the Philippines, security of tenure is a constitutionally protected right. For an employer to legally dismiss an employee, two distinct requirements must be met: substantive due process (a valid, legal reason..."
+markdown: false
 ---
 
 <div id="article-1" class="article-box" style="width: 100%; margin-bottom: 35px;">

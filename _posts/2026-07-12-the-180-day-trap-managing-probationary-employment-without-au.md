@@ -3,6 +3,7 @@ title: "The 180-Day Trap: Managing Probationary Employment Without Automatic Reg
 date: 2026-07-12 09:14:17 +0800
 category: "HR Compliance"
 description: "Article 296 of the Labor Code mandates that probationary employment must not exceed six (6) months. If an employee is allowed to log into work on day 181 without a clear separation..."
+markdown: false
 ---
 
 <div id="article-3" class="article-box" style="width: 100%; margin-bottom: 35px;">
