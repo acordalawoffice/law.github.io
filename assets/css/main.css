@@ -1,0 +1,696 @@
+        /* Modern, Professional Legal Theme Styling */
+        :root {
+            --primary-color: #1a2a3a; /* Deep Institutional Navy */
+            --secondary-color: #c5a059; /* Muted Gold Accent */
+            --text-dark: #2d3748;
+            --text-light: #f7fafc;
+            --bg-light: #ECEFF3;      
+            --bg-white: #F5F6F8;      
+            --border-color: #d1d5db;  
+        }
+            
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+	body {
+    	font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	}
+	h1, h2, h3, .text-serif {
+    	font-family: 'Cormorant Garamond', 'Georgia', serif;
+	}
+        
+
+        /* ===================================================
+            DYNAMIC HEADER & NAVIGATION STYLES
+           =================================================== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent; /* Starts transparent over navy hero */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            z-index: 1000;
+            text-shadow: none !important; /* FIX: Removes all text shadows inside header */
+            transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        /* FIX STATE: Applied instantly when scrolling down on the first page */
+        header.scrolled-white {
+            background-color: #ffffff !important;
+            border-bottom: 3px solid var(--secondary-color) !important; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            transition: padding 0.4s ease;
+        }
+
+        /* Compact navigation container height on scroll */
+        header.scrolled-white .nav-container {
+            padding: 12px 20px; 
+        }
+
+        .left-header-block {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        /* ===================================================
+            THE REFINED PREMIUM GOLD-TRIMMED LOGO FRAME
+           =================================================== */
+        
+        /* 1. THE GOLD OUTER FRAME (Acts as the premium edge trim) */
+        .gold-outer-frame {
+            padding: 2px; /* This exact padding defines the visual thickness of your gold edge trim */
+            background: linear-gradient(135deg, 
+                #bf953f 0%, 
+                #fcf6ba 25%, 
+                #b38728 50%, 
+                #fbf5b7 75%, 
+                #aa771c 100%
+            ); /* Premium Multi-Tone Metallic Gold Gradient */
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            transition: box-shadow 0.4s ease;
+        }
+
+        /* 2. THE EMBEDDED INNER BOX (Houses the logo, blocking out the middle) */
+        .logo-inner-box {
+            background-color: #111e2b; /* Solid Dark Navy background fill to maximize contrast */
+            padding: 8px 16px;
+            border-radius: 2px; /* Slightly tighter rounding to follow the outer frame */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.4s ease;
+        }
+
+        /* Adaptation changes for scrolled-white status */
+        header.scrolled-white .logo-inner-box {
+            background-color: #ffffff; /* Inner backing seamlessly converts to clean white */
+        }
+        
+        header.scrolled-white .gold-outer-frame {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 3. CORE LOGO GRAPHICS AND TYPOGRAPHY */
+        .linear-horizon-logo {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+        }
+
+        .logo-mark {
+            display: flex;
+            align-items: flex-end; 
+            gap: 4px;              
+            margin-bottom: 4px;
+        }
+
+        .bar {
+            width: 5px; 
+            border-radius: 1px 1px 0 0; 
+            transition: background-color 0.4s ease;
+        }
+
+        /* Logo Graphic Components */
+        .bar-left { height: 20px; background-color: #FFFFFF; }
+        .bar-middle { height: 28px; background-color: var(--secondary-color); }
+        .bar-right { height: 15px; background-color: #FFFFFF; }
+
+        .logo-anchor {
+            width: 31px;               
+            height: 2.5px;             
+            background-color: var(--secondary-color); 
+            margin-bottom: 6px;
+        }
+
+        .brand-text {
+            display: flex;
+            align-items: baseline;
+            white-space: nowrap;
+        }
+
+        .brand-text .text-serif {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem; 
+            font-weight: 600;
+            color: #FFFFFF; 
+            letter-spacing: 0.5px;
+            text-shadow: none !important; 
+            transition: color 0.4s ease; 
+        }
+
+        .brand-text .text-sans {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.45rem; 
+            font-weight: 300;
+            color: var(--secondary-color); 
+            margin-left: 2px;
+            text-shadow: none !important;
+        }
+
+        /* SCROLL TRANSITION ADAPTATIONS FOR INTERNAL LOGO TEXT */
+        header.scrolled-white .bar-left, 
+        header.scrolled-white .bar-right {
+            background-color: var(--primary-color) !important;
+        }
+        header.scrolled-white .brand-text .text-serif {
+            color: var(--primary-color) !important;
+        }
+
+        /* ===================================================
+            COMMUNICATIONS & NAVIGATION LINKS
+           =================================================== */
+        .comm-details {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+            border-left: 1px solid rgba(255,255,255,0.2);
+            padding-left: 20px;
+            text-shadow: none !important;
+            transition: border-color 0.4s ease;
+        }
+
+        header.scrolled-white .comm-details {
+            border-left: 1px solid rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .comm-details span {
+            color: #cbd5e0; 
+            font-size: 0.72rem;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            text-shadow: none !important;
+            transition: color 0.4s ease;
+        }
+
+        header.scrolled-white .comm-details span {
+            color: #718096 !important; 
+        }
+
+        .comm-details a {
+            color: var(--text-light); 
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            margin-top: 2px;
+            text-shadow: none !important;
+            transition: color 0.4s ease; 
+        }
+
+        header.scrolled-white .comm-details a {
+            color: var(--primary-color) !important;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: var(--text-light); 
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-shadow: none !important;
+            transition: color 0.4s ease; 
+        }
+
+        header.scrolled-white nav ul li a {
+            color: var(--primary-color) !important; 
+        }
+
+        nav ul li a:hover,
+        .comm-details a:hover {
+            color: var(--secondary-color) !important;
+            transition: color 0.2s ease;
+        }
+
+        /* Hero Section Base */
+        .hero {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 220px 20px 120px 20px; 
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.4rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: 0.5px;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #cbd5e0;
+            margin-bottom: 35px;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-action-container {
+            margin-top: 25px;
+        }
+
+        .btn-action {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 14px 32px;
+            border: none;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.85rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+        }
+
+        .btn-action:hover {
+            background-color: #b38f4b;
+            color: var(--text-light);
+        }
+
+        /* ===================================================
+            CORE MAIN WEB SECTIONS
+           =================================================== */
+        .main-section {
+            padding: 90px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            scroll-margin-top: 100px; 
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem !important; 
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+
+        /* Profile Layout */
+        .profile-container {
+            background-color: var(--bg-white);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .profile-text h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .profile-text .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .profile-text p {
+            margin-bottom: 15px;
+            color: #4a5568;
+            font-size: 1.10rem;
+ 	    text-align: justify;
+	    font-family: 'Georgia', serif; /* Elegant reading serif for body copy */
+            line-height: 1.5;
+       }
+
+        /* Practice Focus Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .focus-card {
+            background-color: var(--bg-white);
+            padding: 30px;
+            border-radius: 6px;
+            border-top: 4px solid var(--primary-color);
+            border-left: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .focus-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border-top-color: var(--secondary-color);
+        }
+
+        .focus-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .focus-card p {
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+
+        /* Insights List Layout */
+        .insights-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .insight-item {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 6px;
+        }
+
+        .insight-tag {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        .insight-item h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .insight-item p {
+            font-size: 1rem;
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+
+        .insight-link {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        .insight-link:hover {
+            color: var(--secondary-color);
+        }
+
+/* Contact Section Details */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .contact-info-card {
+            background-color: var(--bg-white);
+            padding: 30px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Footer Basic Design */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 3px solid var(--secondary-color);
+        }
+
+        /* ===================================================
+            DEEP-LINK ANCHOR OFFSET
+            Every article gets its own id (see markup). This makes
+            sure that when a Facebook/FB Messenger link jumps straight
+            to an article, the fixed header doesn't cover its title.
+           =================================================== */
+        .article-box,
+        .legal-article {
+            scroll-margin-top: 110px;
+        }
+
+        /* ===================================================
+            MOBILE NAVIGATION (HAMBURGER MENU)
+           =================================================== */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: 34px;
+            height: 34px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1100;
+            padding: 0;
+        }
+
+        .nav-toggle .bar-icon {
+            width: 100%;
+            height: 2px;
+            background-color: #FFFFFF;
+            border-radius: 2px;
+            transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        header.scrolled-white .nav-toggle .bar-icon {
+            background-color: var(--primary-color);
+        }
+
+        header.nav-open .nav-toggle .bar-icon:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        header.nav-open .nav-toggle .bar-icon:nth-child(2) {
+            opacity: 0;
+        }
+        header.nav-open .nav-toggle .bar-icon:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        @media (max-width: 860px) {
+            .nav-container {
+                flex-wrap: nowrap;
+            }
+
+            .comm-details {
+                display: none; /* hide the phone/schedule block to reduce crowding on small screens */
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                width: min(78vw, 320px);
+                background-color: #ffffff;
+                box-shadow: -6px 0 20px rgba(0,0,0,0.15);
+                transform: translateX(100%);
+                transition: transform 0.35s ease;
+                padding: 100px 30px 30px 30px;
+                z-index: 1050;
+            }
+
+            header.nav-open nav {
+                transform: translateX(0);
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 12px 0;
+                width: 100%;
+                border-bottom: 1px solid var(--border-color);
+                color: var(--primary-color) !important;
+                font-size: 1rem;
+            }
+
+            /* Backdrop shown behind the open mobile menu */
+            .nav-backdrop {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.4);
+                z-index: 1040;
+            }
+
+            header.nav-open .nav-backdrop {
+                display: block;
+            }
+
+            .brand-text .text-serif {
+                font-size: 1.3rem;
+            }
+
+            .brand-text .text-sans {
+                font-size: 1.15rem;
+            }
+        }
+
+/* ===================================================
+   Styling for the newer 'legal-article' template used
+   for Aragones ruling / non-compete / NDA / endo articles.
+   Consolidated here once instead of being repeated inside
+   every article's markdown file.
+   =================================================== */
+
+  /* All rules are scoped under .legal-article so nothing here touches
+     the rest of the page (header, nav, footer, etc). */
+  .legal-article{
+    width:100%;
+    max-width:none;
+    box-sizing:border-box;
+    margin:0;
+    padding:24px;
+    color:#22252b;
+    font-family:Georgia, 'Times New Roman', serif;
+    font-size:17px;
+    line-height:1.7;
+  }
+  .legal-article h1{
+    font-size:40px !important;
+    line-height:1.2 !important;
+    font-weight:700 !important;
+    margin:0 0 10px !important;
+    color:#152238 !important;
+  }
+  .legal-article .subtitle{
+    font-size:16px;
+    color:#565b66;
+    margin:0 0 28px;
+    font-style:italic;
+  }
+  .legal-article h2{
+    font-size:24px !important;
+    line-height:1.3 !important;
+    font-weight:700 !important;
+    margin:36px 0 12px !important;
+    color:#152238 !important;
+  }
+  .legal-article p{
+    margin:0 0 16px;
+    text-align:justify;
+  }
+  .legal-article blockquote{
+    margin:24px 0;
+    padding:14px 20px;
+    border-left:3px solid #9C7A3C;
+    background:#F6F4EE;
+    font-style:italic;
+    color:#152238;
+  }
+  .legal-article ul, .legal-article ol{
+    margin:0 0 16px;
+    padding-left:20px;
+  }
+  .legal-article li{
+    margin:0 0 8px;
+  }
+  .legal-article .disclaimer{
+    margin-top:36px;
+    padding-top:16px;
+    border-top:1px solid #DCD6C8;
+    font-size:13px;
+    color:#565b66;
+    font-style:italic;
+  }
