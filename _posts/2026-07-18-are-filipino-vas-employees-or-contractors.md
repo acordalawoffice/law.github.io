@@ -1,6 +1,6 @@
 ---
 title: "The Freelance Boom's Fine Print: Are Filipino VAs Employees or Contractors?"
-date: 2026-07-18 09:00:00 +0800
+date: 2026-07-27 09:00:00 +0800
 category: "Employee Rights"
 description: "Many VAs sign an 'independent contractor' agreement and assume that settles their rights. Philippine courts look past the label to how the work is actually managed, and that determines what protections apply."
 markdown: false
