@@ -88,6 +88,8 @@ description: "What Philippine law guarantees BPO and healthcare night-shift work
 <h1>Working the graveyard shift, and working alongside AI</h1>
 <p class="subtitle">Two realities reshaping the Philippines' BPO and healthcare workforce &mdash; what the law guarantees night-shift workers, and what it requires before a role can be automated away</p>
 
+<div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 27, 2026 | Category: Employee Rights</div>
+
 <p>Few industries test Philippine labor law the way BPO and healthcare do. Both run around the clock, both depend on people working hours the rest of the country sleeps through, and both are now facing a second disruption on top of the first: artificial intelligence quietly taking over tasks that used to require a full shift of human hands. This article covers two questions we hear constantly from workers in these sectors &mdash; what am I legally owed for working nights, and can I legally be let go because a machine can now do my job?</p>
 
 <span class="section-tag">Part One</span>
