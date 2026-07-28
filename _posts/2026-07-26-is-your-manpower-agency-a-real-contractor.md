@@ -9,7 +9,7 @@ markdown: false
 <div id="article-labor-only-contracting" class="article-box" style="width: 100%; margin-bottom: 35px;">
     <article style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
         <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">Is Your Manpower Agency a Real Contractor, or Just a Pass-Through?</h3>
-        <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 2026 | Category: Employer Compliance</div>
+        <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published: July 26, 2026 | Category: Employer Compliance</div>
 
         <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
             <p style="margin-bottom: 20px;">A lot of Filipino workers report to a supervisor from one company while their payslip comes from another. That arrangement isn't automatically illegal &mdash; legitimate job contracting is a normal, lawful part of doing business in the Philippines. But when the "contractor" is little more than a name on a payslip, with no real capital, equipment, or control over how the work gets done, the arrangement crosses into labor-only contracting &mdash; and the law treats the company that actually benefits from the work as the real employer, with all the liability that comes with it.</p>
