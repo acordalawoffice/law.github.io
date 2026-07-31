@@ -36,6 +36,7 @@ description: "From cash bonds to uniforms to training fees, here's what Philippi
 
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">What This Means in Practice</h4>
         <p style="margin-bottom: 15px;">For employers, the safest approach is to treat uniforms, safety equipment, and training as ordinary costs of running the business, and to reserve cash bonds only for situations where the practice is clearly recognized and every procedural safeguard is followed. For employees, it's worth actually reading your payslip. A recurring deduction you never agreed to, or one that was never properly explained, is worth raising with HR — and if that doesn't resolve it, worth raising with DOLE.</p>
+         <p style="font-size: 0.8rem; color: #a0aec0; margin-top: 25px; margin-bottom: 0;">Legal basis: Articles 113–115 of the Labor Code; DOLE Labor Advisory No. 11, Series of 2014; DOLE Department Order No. 195, Series of 2018.</p>
     </div>
 
     <div style="margin-top: 30px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
