@@ -31,3 +31,15 @@ navBackdrop.addEventListener('click', closeMobileNav);
 mainNav.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', closeMobileNav);
 });
+
+function setDynamicScrollOffset() {
+    var header = document.getElementById('mainHeader');
+    if (header) {
+        var headerHeight = header.offsetHeight;
+        document.documentElement.style.scrollPaddingTop = (headerHeight + 10) + 'px';
+    }
+}
+
+window.addEventListener('load', setDynamicScrollOffset);
+window.addEventListener('resize', setDynamicScrollOffset);
+window.addEventListener('scroll', setDynamicScrollOffset);
