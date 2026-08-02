@@ -33,6 +33,7 @@ mainNav.querySelectorAll('a').forEach(function (link) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    var header = document.getElementById('mainHeader');
     var navLinks = document.querySelectorAll('a[href*="#"]');
     navLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
@@ -41,7 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
             var target = document.getElementById(hash);
             if (!target) return;
             e.preventDefault();
-            var header = document.getElementById('mainHeader');
+            if (header && hash !== 'home') {
+                header.classList.add('scrolled-white');
+            }
             var headerHeight = header ? header.offsetHeight : 90;
             var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
             window.scrollTo({ top: targetPosition, behavior: 'smooth' });
