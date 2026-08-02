@@ -31,23 +31,3 @@ navBackdrop.addEventListener('click', closeMobileNav);
 mainNav.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', closeMobileNav);
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var header = document.getElementById('mainHeader');
-    var navLinks = document.querySelectorAll('a[href*="#"]');
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            var hash = this.getAttribute('href').split('#')[1];
-            if (!hash) return;
-            var target = document.getElementById(hash);
-            if (!target) return;
-            e.preventDefault();
-            if (header && hash !== 'home') {
-                header.classList.add('scrolled-white');
-            }
-            var headerHeight = header ? header.offsetHeight : 90;
-            var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
-            window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-        });
-    });
-});
