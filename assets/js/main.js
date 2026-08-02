@@ -42,4 +42,3 @@ function setDynamicScrollOffset() {
 
 window.addEventListener('load', setDynamicScrollOffset);
 window.addEventListener('resize', setDynamicScrollOffset);
-window.addEventListener('scroll', setDynamicScrollOffset);
