@@ -17,6 +17,7 @@
 
         html {
             scroll-behavior: smooth;
+			scroll-padding-top: 95px;
 		}
 
 	body {
@@ -59,12 +60,7 @@
             transition: padding 0.4s ease;
         }
 
-        /* Compact navigation container height on scroll */
-        header.scrolled-white .nav-container {
-            padding: 12px 20px; 
-        }
-
-        .left-header-block {
+           .left-header-block {
             display: flex;
             align-items: center;
             gap: 24px;
