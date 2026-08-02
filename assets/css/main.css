@@ -37,7 +37,7 @@
             left: 0;
             width: 100%;
             background-color: transparent; /* Starts transparent over navy hero */
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            border-bottom: 1px solid var(--secondary-color);
             z-index: 1000;
             text-shadow: none !important; /* FIX: Removes all text shadows inside header */
             transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
@@ -97,15 +97,15 @@
             transition: background-color 0.4s ease;
         }
 
-        .header-logo-img {
-    height: 52px;
+       .header-logo-img {
+    height: 68px;
     width: auto;
     display: block;
 }
 
 @media (max-width: 600px) {
     .header-logo-img {
-        height: 40px;
+        height: 50px;
     }
 }
         
