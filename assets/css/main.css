@@ -518,7 +518,8 @@
             to an article, the fixed header doesn't cover its title.
            =================================================== */
         .article-box,
-        .legal-article {
+        .legal-article,
+		.main-section {
             scroll-margin-top: 110px;
         }
 
