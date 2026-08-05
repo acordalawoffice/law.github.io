@@ -46,6 +46,6 @@ markdown: false
 <h2>The bigger picture</h2>
 <p>The tension at the heart of the endo debate is not between having contracts and not having them &mdash; it's between genuine flexibility for seasonal or project-based work, and using short-term paperwork to strip workers of rights the Constitution and the Labor Code say they're entitled to once their work becomes part of the ordinary, ongoing business of the company that employs them.</p>
 
-<p class="disclaimer">This article is for general informational purposes only and does not constitute legal advice. For guidance on a specific employment situation, please consult a licensed Philippine labor lawyer or contact our office directly.</p>
+<p class="disclaimer">This article was prepared with the assistance of artificial intelligence and, while carefully reviewed, may contain inaccuracies; it does not constitute formal legal advice, and readers should consult a qualified attorney regarding their specific circumstances. Read our full firm caveat at the top of this hub.</p>
 
 </article>
