@@ -44,6 +44,6 @@ markdown: false
 <h2>The bigger picture</h2>
 <p>NDAs are one of the most common contracts signed in the Philippines, and also one of the most rarely read carefully. Their enforceability isn't automatic just because a signature is on the page &mdash; it depends on whether the agreement is specific, proportionate, and genuinely tied to protecting real confidential information rather than controlling a person's career after they've moved on.</p>
 
-<p class="disclaimer">This article is for general informational purposes only and does not constitute legal advice. For guidance on a specific non-disclosure agreement, please consult a licensed Philippine lawyer or contact our office directly.</p>
+<p class="disclaimer">This article was prepared with the assistance of artificial intelligence and, while carefully reviewed, may contain inaccuracies; it does not constitute formal legal advice, and readers should consult a qualified attorney regarding their specific circumstances. Read our full firm caveat at the top of this hub.</p>
 
 </article>
