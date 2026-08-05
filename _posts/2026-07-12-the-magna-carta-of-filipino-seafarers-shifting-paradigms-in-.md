@@ -28,7 +28,7 @@ markdown: false
 
     <div style="margin-top: 30px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
         <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.4; margin: 0; text-align: justify;">
-            *Disclaimer: Case outcomes depend heavily on specific timelines and evidentiary facts. This general analysis is not formal legal advice. Read our full firm caveat at the top of this hub or consult an attorney.*
+            *Disclaimer: This article was prepared with the assistance of artificial intelligence and, while carefully reviewed, may contain inaccuracies; it does not constitute formal legal advice, and readers should consult a qualified attorney regarding their specific circumstances. Read our full firm caveat at the top of this hub.*
         </p>
     </div>
 </article>
