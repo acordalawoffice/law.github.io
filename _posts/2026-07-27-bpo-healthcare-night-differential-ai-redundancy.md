@@ -154,6 +154,6 @@ description: "What Philippine law guarantees BPO and healthcare night-shift work
 <h2>The bigger picture</h2>
 <p>Both issues covered here point to the same underlying principle: technology and business necessity don't suspend the Labor Code, they operate within it. A night shift doesn't just come with a pay premium &mdash; it comes with a legal obligation to protect the health of the people working it. And a company's right to automate doesn't come with a right to skip the proof the law requires before someone loses their job because of it &mdash; even if, as the jurisprudence shows, a paperwork misstep alone won't undo an otherwise genuine redundancy.</p>
 
-<p class="disclaimer">This article is for general informational purposes only and does not constitute legal advice. For guidance on a specific workplace situation, please consult a licensed Philippine labor lawyer or contact our office directly.</p>
+<p class="disclaimer">This article was prepared with the assistance of artificial intelligence and, while carefully reviewed, may contain inaccuracies; it does not constitute formal legal advice, and readers should consult a qualified attorney regarding their specific circumstances. Read our full firm caveat at the top of this hub.</p>
 
 </article>
