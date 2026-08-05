@@ -42,6 +42,6 @@ markdown: false
 <h2>The bigger picture</h2>
 <p>The Aragones case reinforces a theme running through Philippine labor jurisprudence: the law leans toward protecting the worker, especially in the imbalance of power between someone accepting a job and the company offering it. It's a reminder that in the Philippines, "you're hired" can carry more legal weight than either side may realize &mdash; starting the moment the ink dries, not the moment the desk chair is warmed.</p>
 
-<p class="disclaimer">This article is for general informational purposes only and does not constitute legal advice. For guidance on a specific situation, please consult a licensed Philippine labor lawyer or contact our office directly.</p>
+<p class="disclaimer">This article was prepared with the assistance of artificial intelligence and, while carefully reviewed, may contain inaccuracies; it does not constitute formal legal advice, and readers should consult a qualified attorney regarding their specific circumstances. Read our full firm caveat at the top of this hub.</p>
 
 </article>
