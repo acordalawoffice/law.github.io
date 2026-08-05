@@ -49,6 +49,6 @@ markdown: false
 <h2>The bigger picture</h2>
 <p>Philippine jurisprudence on non-compete clauses remains less developed than in jurisdictions with dedicated legislation, which means courts continue to decide these disputes case by case rather than through a single bright-line rule. That gives both employers and employees room to negotiate reasonable terms &mdash; but it also means a poorly drafted clause, on either side, can end up costing far more in a courtroom than it would have taken to get right at the drafting table.</p>
 
-<p class="disclaimer">This article is for general informational purposes only and does not constitute legal advice. For guidance on a specific non-compete agreement, please consult a licensed Philippine labor lawyer or contact our office directly.</p>
+<p class="disclaimer">This article was prepared with the assistance of artificial intelligence and, while carefully reviewed, may contain inaccuracies; it does not constitute formal legal advice, and readers should consult a qualified attorney regarding their specific circumstances. Read our full firm caveat at the top of this hub.</p>
 
 </article>
