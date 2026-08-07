@@ -71,14 +71,14 @@
         }
 
         .header-logo-img {
-    height: 68px;
+    height: 78px;
     width: auto;
     display: block;
 }
 
 @media (max-width: 600px) {
     .header-logo-img {
-        height: 50px;
+        height: 56px;
     }
 }
         
