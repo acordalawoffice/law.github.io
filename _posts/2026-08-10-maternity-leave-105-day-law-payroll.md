@@ -39,7 +39,7 @@ description: "The Expanded Maternity Leave Law isn't just a woman's benefit — 
 
     <div style="margin-top: 30px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
         <p style="font-size: 0.82rem; font-style: italic; color: #718096; line-height: 1.4; margin: 0; text-align: justify;">
-            *Disclaimer: Maternity leave entitlement can depend on the employee's employment status, SSS contribution record, solo-parent qualification, and other specific facts. This article was prepared with the assistance of artificial intelligence and, while carefully reviewed, may contain inaccuracies; it does not constitute formal legal advice, and readers should consult a qualified attorney regarding their specific circumstances. Read our full firm caveat at the top of this hub.*
+            *Disclaimer: The applicable maternity-leave and benefit rules may depend on the worker’s employment or coverage status, SSS contribution record, solo-parent qualification, the outcome of the pregnancy, and other specific facts. This article was prepared with the assistance of artificial intelligence and, while carefully reviewed, may contain inaccuracies; it does not constitute formal legal advice, and readers should consult a qualified attorney regarding their specific circumstances. Read our full firm caveat at the top of this hub.*
         </p>
     </div>
 </article>
