@@ -1,21 +1,19 @@
 ---
-
 title: "The 'Floating Status' Trap: When Layoff Isn't Really a Layoff"
 date: 2026-08-22
 category: "Termination & Separation"
-description: "Floating status may be a legitimate temporary arrangement—but it is not an indefinite holding pattern. Philippine labor law and jurisprudence place important limits on how long an employee may remain without an assignment."
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+description: "Floating status may be a legitimate temporary arrangement — but it is not an indefinite holding pattern. Philippine labor law and jurisprudence place important limits on how long an employee may remain without an assignment."
+---
 
 <article class="article-box" style="background: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 6px; padding: 30px; margin-bottom: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
     <h3 style="font-size: 2.0rem; color: #1a202c; margin-top: 0; margin-bottom: 10px;">The "Floating Status" Trap: When Layoff Isn't Really a Layoff</h3>
     <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published on August 22, 2026 &bull; Legal Educational Article</div>
 
-```
 <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
 
     <p style="margin-bottom: 15px;">If you run a security agency, a manpower company, or any business that assigns people to different client sites, you've probably used the term "floating status" without thinking twice about it. A client ends its contract, there's no new post ready yet, so the guard or worker is told to wait for the next assignment. It may feel harmless. It may genuinely be temporary. And in the right circumstances, the law recognizes that it can be.</p>
 
-    <p style="margin-bottom: 20px;">But there is an important catch: <strong>floating status is temporary by design.</strong> The law does not give an employer an indefinite period to keep an employee without work or assignment. There is a legal clock—and employers need to know both when it starts and what they are expected to do before it runs out.</p>
+    <p style="margin-bottom: 20px;">But there is an important catch: <strong>floating status is temporary by design.</strong> The law does not give an employer an indefinite period to keep an employee without work or assignment. There is a legal clock — and employers need to know both when it starts and what they are expected to do before it runs out.</p>
 
     <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">So what exactly is floating status?</h4>
 
@@ -107,7 +105,7 @@ description: "Floating status may be a legitimate temporary arrangement—but it
 
     <p style="margin-bottom: 15px;">But floating status is also not a loophole. The employer must have a legitimate basis for the temporary displacement, exercise the arrangement in good faith, and be able to substantiate the circumstances supporting it.</p>
 
-    <p style="margin-bottom: 15px;">Most importantly, <strong>six months is a ceiling—not a safe harbor.</strong> The fact that an employer can temporarily keep an employee without an assignment does not mean it has an automatic right to do so for six months. And once the permissible period is approaching its end, the employer needs to decide whether the employee can be recalled or reassigned or whether a lawful separation based on an applicable authorized cause is necessary.</p>
+    <p style="margin-bottom: 15px;">Most importantly, <strong>six months is a ceiling — not a safe harbor.</strong> The fact that an employer can temporarily keep an employee without an assignment does not mean it has an automatic right to do so for six months. And once the permissible period is approaching its end, the employer needs to decide whether the employee can be recalled or reassigned or whether a lawful separation based on an applicable authorized cause is necessary.</p>
 
     <p style="margin-bottom: 20px;"><strong>Floating status is temporary by design. The six-month rule is not a loophole; it is a boundary.</strong></p>
 
@@ -118,6 +116,4 @@ description: "Floating status may be a legitimate temporary arrangement—but it
         *Disclaimer: This article was prepared with the assistance of artificial intelligence and, while carefully reviewed, may contain inaccuracies; it does not constitute formal legal advice, and readers should consult a qualified attorney regarding their specific circumstances. Read our full firm caveat at the top of this hub.*
     </p>
 </div>
-```
-
 </article>
