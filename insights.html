@@ -44,12 +44,68 @@ permalink: /insights/
     var items = Array.prototype.slice.call(document.querySelectorAll('.insight-item'));
     var totalCount = items.length;
 
+    // Remember the original (un-highlighted) title/description text and original links for each card
+    items.forEach(function (item) {
+        var titleLink = item.querySelector('h3 a');
+        var descPara = item.querySelector('p');
+        var readMoreLink = item.querySelector('.insight-link');
+        if (titleLink) {
+            titleLink.dataset.original = titleLink.textContent;
+            titleLink.dataset.originalHref = titleLink.getAttribute('href');
+        }
+        if (descPara) descPara.dataset.original = descPara.textContent;
+        if (readMoreLink) readMoreLink.dataset.originalHref = readMoreLink.getAttribute('href');
+    });
+
+    function setSearchLinks(item, raw) {
+        var titleLink = item.querySelector('h3 a');
+        var readMoreLink = item.querySelector('.insight-link');
+        var suffix = '?q=' + encodeURIComponent(raw);
+        if (titleLink) titleLink.setAttribute('href', titleLink.dataset.originalHref + suffix);
+        if (readMoreLink) readMoreLink.setAttribute('href', readMoreLink.dataset.originalHref + suffix);
+    }
+
+    function resetSearchLinks(item) {
+        var titleLink = item.querySelector('h3 a');
+        var readMoreLink = item.querySelector('.insight-link');
+        if (titleLink) titleLink.setAttribute('href', titleLink.dataset.originalHref);
+        if (readMoreLink) readMoreLink.setAttribute('href', readMoreLink.dataset.originalHref);
+    }
+
+    function escapeRegExp(str) {
+        return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function highlight(text, terms) {
+        if (!terms.length) return text;
+        var pattern = new RegExp('(' + terms.map(escapeRegExp).join('|') + ')', 'gi');
+        return text.replace(pattern, '<mark style="background: #f6e05e; color: inherit; padding: 0 2px; border-radius: 2px;">$1</mark>');
+    }
+
+    function applyHighlight(item, terms) {
+        var titleLink = item.querySelector('h3 a');
+        var descPara = item.querySelector('p');
+        if (titleLink) titleLink.innerHTML = highlight(titleLink.dataset.original, terms);
+        if (descPara) descPara.innerHTML = highlight(descPara.dataset.original, terms);
+    }
+
+    function clearHighlight(item) {
+        var titleLink = item.querySelector('h3 a');
+        var descPara = item.querySelector('p');
+        if (titleLink) titleLink.textContent = titleLink.dataset.original;
+        if (descPara) descPara.textContent = descPara.dataset.original;
+    }
+
     function filterItems() {
         var raw = searchInput.value.trim();
         var query = raw.toLowerCase();
 
         if (query === '') {
-            items.forEach(function (item) { item.style.display = ''; });
+            items.forEach(function (item) {
+                item.style.display = '';
+                clearHighlight(item);
+                resetSearchLinks(item);
+            });
             statusEl.textContent = '';
             return;
         }
@@ -59,6 +115,7 @@ permalink: /insights/
             return item.dataset.search.indexOf(query) !== -1;
         });
         var broadened = false;
+        var terms = [query];
 
         // Pass 2 (fallback): all words present, any order
         if (matches.length === 0) {
@@ -69,10 +126,19 @@ permalink: /insights/
                 });
             });
             broadened = true;
+            terms = words;
         }
 
         items.forEach(function (item) {
-            item.style.display = matches.indexOf(item) !== -1 ? '' : 'none';
+            var isMatch = matches.indexOf(item) !== -1;
+            item.style.display = isMatch ? '' : 'none';
+            if (isMatch) {
+                applyHighlight(item, terms);
+                setSearchLinks(item, raw);
+            } else {
+                clearHighlight(item);
+                resetSearchLinks(item);
+            }
         });
 
         if (matches.length === 0) {
