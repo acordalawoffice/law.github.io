@@ -14,3 +14,82 @@ layout: default
     </div>
 
 </div>
+
+<script>
+(function () {
+    function getQueryParam(name) {
+        var params = new URLSearchParams(window.location.search);
+        return params.get(name);
+    }
+
+    var rawQuery = getQueryParam('q');
+    if (!rawQuery) return;
+    var query = rawQuery.trim();
+    if (!query) return;
+
+    var container = document.querySelector('.article-body');
+    if (!container) return;
+
+    function escapeRegExp(str) {
+        return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function countMatches(root, pattern) {
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var count = 0, node;
+        while ((node = walker.nextNode())) {
+            pattern.lastIndex = 0;
+            var m = node.nodeValue.match(pattern);
+            if (m) count += m.length;
+        }
+        return count;
+    }
+
+    function highlightInContainer(root, pattern) {
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var textNodes = [];
+        var node;
+        while ((node = walker.nextNode())) textNodes.push(node);
+
+        textNodes.forEach(function (textNode) {
+            pattern.lastIndex = 0;
+            if (!pattern.test(textNode.nodeValue)) return;
+            pattern.lastIndex = 0;
+            var span = document.createElement('span');
+            span.innerHTML = textNode.nodeValue.replace(
+                pattern,
+                '<mark class="insights-highlight" style="background:#f6e05e; color:inherit; padding:0 2px; border-radius:2px;">$1</mark>'
+            );
+            var parent = textNode.parentNode;
+            while (span.firstChild) parent.insertBefore(span.firstChild, textNode);
+            parent.removeChild(textNode);
+        });
+    }
+
+    // Pass 1: exact phrase
+    var exactPattern = new RegExp('(' + escapeRegExp(query) + ')', 'gi');
+    var pattern = exactPattern;
+
+    // Pass 2 (fallback): individual words, any order
+    if (countMatches(container, exactPattern) === 0) {
+        var words = query.split(/\s+/).filter(Boolean).map(escapeRegExp);
+        if (words.length === 0) return;
+        pattern = new RegExp('(' + words.join('|') + ')', 'gi');
+        if (countMatches(container, pattern) === 0) return; // nothing to highlight
+    }
+
+    highlightInContainer(container, pattern);
+
+    var firstMark = container.querySelector('mark.insights-highlight');
+    if (firstMark) {
+        var banner = document.createElement('div');
+        banner.style.cssText = 'background:#fffbea; border:1px solid #f6e05e; border-radius:4px; padding:10px 14px; font-size:0.85rem; color:#744210; margin-bottom:20px;';
+        banner.textContent = 'Highlighting matches for "' + query + '" from your search.';
+        container.parentNode.insertBefore(banner, container);
+
+        setTimeout(function () {
+            firstMark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+    }
+})();
+</script>
