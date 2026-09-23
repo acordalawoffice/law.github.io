@@ -16,7 +16,7 @@ description: "A recent Supreme Court decision involving a Filipino domestic work
 
         <p style="margin-bottom: 15px;">Sometimes, the worker simply wants to recover something &mdash; unpaid salary, salary differentials, reimbursement of expenses, or compensation for being sent home before the employment contract ended. That is why government assistance matters.</p>
 
-        <p style="margin-bottom: 15px;">But there is another side to that process that OFWs should understand: <strong>a settlement is still a settlement.</strong> If you voluntarily agree to accept a certain amount in exchange for giving up specified claims&mdash;and that agreement is properly reached with the assistance of the appropriate government office&mdash;the law may treat that settlement as final.</p>
+        <p style="margin-bottom: 15px;">But there is another side to that process that OFWs should understand: <strong>a settlement is still a settlement.</strong> If you voluntarily agree to accept a certain amount in exchange for giving up specified claims &mdash; and that agreement is properly reached with the assistance of the appropriate government office &mdash; the law may treat that settlement as final.</p>
 
         <p style="margin-bottom: 20px;">A recent Supreme Court decision illustrates this point very well. The case is <strong>Forever Manpower Services Agency, Inc., et al. v. Court of Appeals and Larelyn Paulino Milagroso</strong>, G.R. No. 271784, decided on January 13, 2026. And there is much more to the case than the simple statement that "a quitclaim is binding."</p>
 
@@ -44,7 +44,7 @@ description: "A recent Supreme Court decision involving a Filipino domestic work
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">This is where the case gets interesting</h4>
         <p style="margin-bottom: 15px;">The National Labor Relations Commission eventually reversed the Labor Arbiter, finding that Milagroso had already settled the very claims she was trying to litigate. The Court of Appeals disagreed. The CA found the &#8369;40,000 settlement questionable, among other reasons because the conference minutes appeared to show that Milagroso was merely going to think about the offer. It also considered the amount small compared with the Labor Arbiter's eventual award of US$8,700.</p>
 
-        <p style="margin-bottom: 20px;">The Supreme Court, however, took a different view. It reinstated the NLRC ruling and dismissed the Labor Arbiter case&mdash;and this is where the case becomes a valuable lesson for OFWs.</p>
+        <p style="margin-bottom: 20px;">The Supreme Court, however, took a different view. It reinstated the NLRC ruling and dismissed the Labor Arbiter case &mdash; and this is where the case becomes a valuable lesson for OFWs.</p>
 
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">A quitclaim is not always "just a quitclaim"</h4>
         <p style="margin-bottom: 15px;">We often hear statements like "quitclaims are not favored in labor cases." There is truth in that. Courts have long been careful about quitclaims because an employee may sometimes sign a document without fully understanding its consequences, or because the employee has little practical choice but to accept whatever amount is being offered.</p>
@@ -61,14 +61,14 @@ description: "A recent Supreme Court decision involving a Filipino domestic work
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">Why did the Supreme Court give weight to the SEnA process?</h4>
         <p style="margin-bottom: 15px;">The Court emphasized that the compromise documents were connected to the SEnA proceeding. The Quitclaim and Affidavit of Quitclaim carried the same SEnA/OWWA reference involved in Milagroso's request for assistance. The Quitclaim was notarized by the SEADO handling the matter, the Affidavit of Quitclaim was notarized by an OWWA official, and the Acknowledgment was also noted and signed by the SEADO.</p>
 
-        <p style="margin-bottom: 15px;">For the Supreme Court, these circumstances supported the conclusion that the settlement was reached with the assistance of the SEADO&mdash;not merely through a private transaction between an employee and an employer. That distinction made all the difference.</p>
+        <p style="margin-bottom: 15px;">For the Supreme Court, these circumstances supported the conclusion that the settlement was reached with the assistance of the SEADO &mdash; not merely through a private transaction between an employee and an employer. That distinction made all the difference.</p>
 
         <p style="margin-bottom: 20px;">The Court explained that a compromise voluntarily reached with SEADO assistance, within the conciliation-mediation process, may become final and binding under Article 233. Once that happens, the labor authorities and courts generally cannot reopen the settled issues unless one of the recognized exceptions is established.</p>
 
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">"But &#8369;40,000 was much less than the eventual award."</h4>
         <p style="margin-bottom: 15px;">This was one of the points raised before the Supreme Court, and it is easy to understand why. The Labor Arbiter eventually awarded US$8,700. Compared with that amount, &#8369;40,000 certainly looks small. But the Supreme Court said that this was not the proper way to look at the settlement.</p>
 
-        <p style="margin-bottom: 15px;">A settlement is a compromise. It is not the same thing as a judgment. When people settle a dispute, they are effectively choosing certainty over the possibility of obtaining a larger&mdash;or smaller&mdash;amount after a full legal battle. So the relevant question is not simply how much the employee eventually won from the Labor Arbiter years later; the more relevant question is what the parties were actually trying to settle at the time of the compromise.</p>
+        <p style="margin-bottom: 15px;">A settlement is a compromise. It is not the same thing as a judgment. When people settle a dispute, they are effectively choosing certainty over the possibility of obtaining a larger &mdash; or smaller &mdash; amount after a full legal battle. So the relevant question is not simply how much the employee eventually won from the Labor Arbiter years later; the more relevant question is what the parties were actually trying to settle at the time of the compromise.</p>
 
         <p style="margin-bottom: 20px;">The Court noted that Milagroso herself had presented a claim of about &#8369;125,000 during the SEnA proceedings, while the agency offered &#8369;40,000. The government-assisted nature of the settlement was also significant: the SEADO's role included helping the parties reach a fair and reasonable settlement, and there was no sufficient showing that the SEADO had failed in that role.</p>
 
@@ -80,7 +80,7 @@ description: "A recent Supreme Court decision involving a Filipino domestic work
         <p style="margin-bottom: 20px;">That is a significant protection for settlements. It also means that an OFW should understand exactly what he or she is signing before signing it.</p>
 
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">Does this mean OFWs should never sign a settlement?</h4>
-        <p style="margin-bottom: 15px;">No. That would be the wrong lesson&mdash;settlement is a legitimate and important way of resolving employment disputes. For some OFWs, receiving an agreed amount promptly may be preferable to waiting years for litigation to end. The important point is <strong>informed consent</strong>.</p>
+        <p style="margin-bottom: 15px;">No. That would be the wrong lesson &mdash; settlement is a legitimate and important way of resolving employment disputes. For some OFWs, receiving an agreed amount promptly may be preferable to waiting years for litigation to end. The important point is <strong>informed consent</strong>.</p>
 
         <p style="margin-bottom: 15px;">Before signing, an OFW should understand exactly what he or she is giving up. Is the settlement only for unpaid salary? Or does it also cover salary differentials, the unexpired portion of the contract, reimbursement of expenses, medical or disability benefits, insurance claims, damages, ticket expenses, and other possible claims?</p>
 
@@ -91,7 +91,7 @@ description: "A recent Supreme Court decision involving a Filipino domestic work
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">The important word is "voluntary"</h4>
         <p style="margin-bottom: 15px;">The Supreme Court's ruling did not mean that a government-assisted settlement can never be challenged. The Court specifically recognized the exceptions involving fraud, misrepresentation, or coercion, as well as non-compliance with the settlement.</p>
 
-        <p style="margin-bottom: 20px;">So if an OFW was genuinely forced into signing, deceived about what the document meant, or otherwise induced into the settlement through circumstances recognized by law, that can be legally significant. But the person challenging the settlement still has to present evidence. Simply saying "I did not realize what I was signing" may not be enough when the records show a notarized agreement, government-assisted proceedings, an acknowledgment of payment, and no sufficient evidence of fraud, coercion, or misrepresentation&mdash;which is essentially what happened in Milagroso's case.</p>
+        <p style="margin-bottom: 20px;">So if an OFW was genuinely forced into signing, deceived about what the document meant, or otherwise induced into the settlement through circumstances recognized by law, that can be legally significant. But the person challenging the settlement still has to present evidence. Simply saying "I did not realize what I was signing" may not be enough when the records show a notarized agreement, government-assisted proceedings, an acknowledgment of payment, and no sufficient evidence of fraud, coercion, or misrepresentation &mdash; which is essentially what happened in Milagroso's case.</p>
 
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">There is also a bigger development: SEnA rules were revised in 2025</h4>
         <p style="margin-bottom: 15px;">This case is particularly timely because DOLE revised the implementing rules of the Single Entry Approach in Department Order No. 249, series of 2025. DOLE said the new rules revised the earlier Department Order No. 151, series of 2016, and were intended to strengthen the SEnA conciliation-mediation process. The revised rules also modernized the system through the DOLE Assistance for Request Management System, or DOLE-ARMS, including electronic filing and monitoring of Requests for Assistance.</p>
@@ -104,7 +104,7 @@ description: "A recent Supreme Court decision involving a Filipino domestic work
         <p style="margin-bottom: 20px;">There is nothing wrong with wanting to settle. But there is a big difference between "I am accepting this amount as partial payment" and "I am accepting this amount as full and final settlement of all my claims." The second statement can have consequences long after the money has been spent.</p>
 
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">What should OFWs remember from this case?</h4>
-        <p style="margin-bottom: 15px;"><strong>1. A quitclaim is not automatically valid&mdash;or automatically invalid.</strong> The surrounding circumstances matter. The Supreme Court looked beyond the title of the document and examined how and where the agreement was made.</p>
+        <p style="margin-bottom: 15px;"><strong>1. A quitclaim is not automatically valid &mdash; or automatically invalid.</strong> The surrounding circumstances matter. The Supreme Court looked beyond the title of the document and examined how and where the agreement was made.</p>
 
         <p style="margin-bottom: 15px;"><strong>2. A government-assisted settlement deserves serious attention.</strong> A compromise voluntarily reached with the assistance of the appropriate labor authorities can be final and binding under Article 233 of the Labor Code.</p>
 
@@ -119,9 +119,9 @@ description: "A recent Supreme Court decision involving a Filipino domestic work
         <p style="margin-bottom: 20px;"><strong>7. If there was fraud, coercion, or misrepresentation, the story can be different.</strong> Article 233 itself recognizes exceptions to the finality of a compromise. But the party challenging the settlement must be able to establish the legal basis for doing so.</p>
 
         <h4 style="font-size: 1.15rem; color: #2d3748; margin-top: 25px; margin-bottom: 12px;">One final thought for every returning OFW</h4>
-        <p style="margin-bottom: 15px;">Coming home is supposed to be the beginning of the next chapter&mdash;not the beginning of another struggle. That is why government-assisted settlement can be useful. It can give both sides a way to resolve a dispute without years of litigation. But speed should never mean signing without understanding.</p>
+        <p style="margin-bottom: 15px;">Coming home is supposed to be the beginning of the next chapter &mdash; not the beginning of another struggle. That is why government-assisted settlement can be useful. It can give both sides a way to resolve a dispute without years of litigation. But speed should never mean signing without understanding.</p>
 
-        <p style="margin-bottom: 15px;"><strong>Before you sign, know what you are settling.</strong> Know how much you are receiving. Know what claims you are giving up. Know who is being released. And most importantly, know whether the document is simply acknowledging a payment&mdash;or bringing the entire dispute to a legal end.</p>
+        <p style="margin-bottom: 15px;"><strong>Before you sign, know what you are settling.</strong> Know how much you are receiving. Know what claims you are giving up. Know who is being released. And most importantly, know whether the document is simply acknowledging a payment &mdash; or bringing the entire dispute to a legal end.</p>
 
         <p style="margin-bottom: 20px;">The recent Supreme Court decision in <strong>Forever Manpower Services Agency, Inc. v. Court of Appeals and Milagroso</strong> is a good reminder that sometimes, the most important legal document an OFW signs may be the one he or she signs after coming home.</p>
 
