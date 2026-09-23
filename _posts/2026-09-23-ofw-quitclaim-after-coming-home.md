@@ -10,11 +10,11 @@ description: "A recent Supreme Court decision involving a Filipino domestic work
     <div class="article-meta" style="font-size: 0.85rem; color: #718096; margin-bottom: 20px;">Published on September 23, 2026 &bull; Legal Educational Article</div>
 
     <div class="article-body" style="color: #2d3748; line-height: 1.7; text-align: justify;">
-        <p style="margin-bottom: 15px; font-style: italic;">One OFW received &#8369;40,000 after returning home. Two years later, she filed a labor case claiming much more. The Supreme Court had to decide: Was the case still open&mdash;or had the matter already been settled?</p>
+        <p style="margin-bottom: 15px; font-style: italic;">One OFW received &#8369;40,000 after returning home. Two years later, she filed a labor case claiming much more. The Supreme Court had to decide: Was the case still open &mdash; or had the matter already been settled?</p>
 
         <p style="margin-bottom: 15px;">When an OFW comes home after a difficult overseas job, the last thing he or she may want is another long legal battle.</p>
 
-        <p style="margin-bottom: 15px;">Sometimes, the worker simply wants to recover something&mdash;unpaid salary, salary differentials, reimbursement of expenses, or compensation for being sent home before the employment contract ended. That is why government assistance matters.</p>
+        <p style="margin-bottom: 15px;">Sometimes, the worker simply wants to recover something &mdash; unpaid salary, salary differentials, reimbursement of expenses, or compensation for being sent home before the employment contract ended. That is why government assistance matters.</p>
 
         <p style="margin-bottom: 15px;">But there is another side to that process that OFWs should understand: <strong>a settlement is still a settlement.</strong> If you voluntarily agree to accept a certain amount in exchange for giving up specified claims&mdash;and that agreement is properly reached with the assistance of the appropriate government office&mdash;the law may treat that settlement as final.</p>
 
